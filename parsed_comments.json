@@ -1,0 +1,346 @@
+[
+  {
+    "num": 1,
+    "commenter": "Brian",
+    "comment": "Here please use data from this site to create a visual. https://www.finhacker.cz/en/top-20-sp-500-companies-by-market-cap/#1999 \n\nI was thinking of a pie chart with the top ten companies shown as slices with the remainder as one big slice. For 1999 data, these 10 slices will be relatively small and will be the diverse ompanies I am referring to. For today's companies, the slices will be a much bigger part of the pie and be mostly AI companies.",
+    "isReply": "no",
+    "frame": 1005,
+    "timecode": "00:00:41:21"
+  },
+  {
+    "num": 2,
+    "commenter": "Brian",
+    "comment": "Here is the data for today. https://www.finhacker.cz/en/top-20-sp-500-companies-by-market-cap/  \n\nNote that the numbers here and for 1999 may be slightly different from what I say in the script, as it is a slightly difference source as when I was scripting. Just conform it to what I'm saying and let me know if questions.",
+    "isReply": "no",
+    "frame": 1851,
+    "timecode": "00:01:17:03"
+  },
+  {
+    "num": 3,
+    "commenter": "Brian",
+    "comment": "Here I am envisioning multiple headlines that reinforce the AI investment cycle when I say \"hundreds of billions...\"\n\nhttps://www.goldmansachs.com/insights/articles/global-investment-is-forecast-to-exceed-1-trillion-in-2026  \nhttps://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html  \nhttps://www.reuters.com/business/big-tech-invest-about-650-billion-ai-2026-bridgewater-says-2026-02-23/  \n\nFeel free to look for others if three is not enough",
+    "isReply": "no",
+    "frame": 2220,
+    "timecode": "00:01:32:12"
+  },
+  {
+    "num": 4,
+    "commenter": "Brian",
+    "comment": "Here I think a chart showing the \"growth of $10,000 or something similar from the S&P 500 would be a better visual. Something like this: https://www.whatifinvest.com/share?amount=10000&date=2022-09-01&utm_source=copy_link&utm_medium=share&path=%2Fcalculators%2FVOO_NYSE",
+    "isReply": "no",
+    "frame": 2800,
+    "timecode": "00:01:56:16"
+  },
+  {
+    "num": 5,
+    "commenter": "Brian",
+    "comment": "GLOBAL: the text portions in this video seem really small, I'm on my laptop currently and feel like I have to lean forward slightly to read many of them.",
+    "isReply": "no",
+    "frame": 3109,
+    "timecode": "00:02:09:13"
+  },
+  {
+    "num": 6,
+    "commenter": "Brian",
+    "comment": "GLOBAL: For each ETF, when they are introduced, I would like the visual to be the overview page from the respective ETF's website. Here is VOO's website: https://investor.vanguard.com/investment-products/etfs/profile/voo  \n\nSee this video at 1:45 for an example: https://youtu.be/J2hpc6zkKKE?si=YE0JCttVm5hcTKjB&t=105  \n\nThis helps the viewer match their expectations if they decide to go look up the ETF. By showing them what they will see on the site, they will be able to instantly know whether or not they landed in the right place based on what they saw in our video. Of course, I think you can apply some of your amazing skills to make a screenshot slightly more engaging than my example video :)",
+    "isReply": "no",
+    "frame": 6114,
+    "timecode": "00:04:14:18"
+  },
+  {
+    "num": 7,
+    "commenter": "Brian",
+    "comment": "Here just A-Roll of me talking is fine. We haven't gotten to the long-term performance of VOO, but we've been showing that text on the screen for some time now...",
+    "isReply": "no",
+    "frame": 6143,
+    "timecode": "00:04:15:23"
+  },
+  {
+    "num": 8,
+    "commenter": "Brian",
+    "comment": "Here is where I think the performance should kick in, and either a chart of the S&P 500's long-term performance showing it go up and to the right, or just the text you have could work too. For reference, here is a similar chart I made for Instagram. This may be too much for a YouTube graphic, but it's the point I am voicing over in the video for reference: https://www.instagram.com/p/DRSLnRGj7Ph/",
+    "isReply": "no",
+    "frame": 6499,
+    "timecode": "00:04:30:19"
+  },
+  {
+    "num": 9,
+    "commenter": "Brian",
+    "comment": "Here I think it would be a good use of time to set up a \"Definition\" graphic that we can re-use in future videos. Here is an example of a \"Definition\" graphic from a popular Pokemon YouTuber: https://youtu.be/rYjx35QjfZ8?si=UjGVBU_LdOFJ8FFU&t=255",
+    "isReply": "no",
+    "frame": 6960,
+    "timecode": "00:04:50:00"
+  },
+  {
+    "num": 10,
+    "commenter": "Brian",
+    "comment": "As with VOO, a screenshot of the RSP homepage / overview page would be great here.",
+    "isReply": "no",
+    "frame": 8425,
+    "timecode": "00:05:51:01"
+  },
+  {
+    "num": 11,
+    "commenter": "Brian",
+    "comment": "Here it would be more impactful to show the Holdings portion of the ETF website: https://www.invesco.com/us/en/financial-products/etfs/invesco-sp-500-equal-weight-etf.html#Portfolio  \n\nTo find NVDA, click the \"Export data\" link, open the file in Excel, and Ctrl+F for NVDA. Currently it's showing for me as 0.22%. Then to find on the site, click the \"View all\" button under the holdings table, and scroll down to the stocks that are 0.22%. NVDA should match the order it showed up in the Excel file. \n\nThis could also be contrasted with the same screenshot for VOO, where NVDA should be at or near the top (see \"holdings details\" section): https://investor.vanguard.com/investment-products/etfs/profile/voo#portfolio-composition",
+    "isReply": "no",
+    "frame": 8719,
+    "timecode": "00:06:03:07"
+  },
+  {
+    "num": 12,
+    "commenter": "Brian",
+    "comment": "cut this text segment, I haven't mentioned the performance yet, A-roll is fine",
+    "isReply": "no",
+    "frame": 10006,
+    "timecode": "00:06:56:22"
+  },
+  {
+    "num": 13,
+    "commenter": "Brian",
+    "comment": "Or even better, this would be a good spot for the new \"Definition\" graphic I requested that defines equal weight strategies",
+    "isReply": "yes",
+    "frame": 10006,
+    "timecode": "00:06:56:22"
+  },
+  {
+    "num": 14,
+    "commenter": "Brian",
+    "comment": "This chart is really good, would love to see more graphics like this in future videos.",
+    "isReply": "no",
+    "frame": 10374,
+    "timecode": "00:07:12:06"
+  },
+  {
+    "num": 15,
+    "commenter": "Brian",
+    "comment": "This is perfect, I really like this graphic. For future videos, I will supply screenshots that show the exact numbers I am using. I pull them from this free site: https://stockanalysis.com/etf/compare/voo-vs-rsp/?r=5Y",
+    "isReply": "no",
+    "frame": 10522,
+    "timecode": "00:07:18:09"
+  },
+  {
+    "num": 16,
+    "commenter": "Brian",
+    "comment": "Same comment, ETF Overview Page/Homepage",
+    "isReply": "no",
+    "frame": 11158,
+    "timecode": "00:07:44:22"
+  },
+  {
+    "num": 17,
+    "commenter": "Brian",
+    "comment": "Would like a total return chart here as well, soemthing like: https://stockanalysis.com/etf/compare/voo-vs-rsp-vs-vti/?r=5Y",
+    "isReply": "no",
+    "frame": 12961,
+    "timecode": "00:09:00:01"
+  },
+  {
+    "num": 18,
+    "commenter": "Brian",
+    "comment": "Those clicky sound effects are a bit too loud, please make sure sound effects are around -20db to -15db. I usually do -20db when I'm editing.",
+    "isReply": "no",
+    "frame": 13606,
+    "timecode": "00:09:26:21"
+  },
+  {
+    "num": 19,
+    "commenter": "Brian",
+    "comment": "this is a global comment btw",
+    "isReply": "yes",
+    "frame": 13606,
+    "timecode": "00:09:26:21"
+  },
+  {
+    "num": 20,
+    "commenter": "Brian",
+    "comment": "Just reiterating the small text comment, notice how much white space there is as a result of the small font sizes",
+    "isReply": "no",
+    "frame": 13858,
+    "timecode": "00:09:37:09"
+  },
+  {
+    "num": 21,
+    "commenter": "Brian",
+    "comment": "Same here, screenshot of ETF overview page",
+    "isReply": "no",
+    "frame": 15424,
+    "timecode": "00:10:42:15"
+  },
+  {
+    "num": 22,
+    "commenter": "Brian",
+    "comment": "Here please show the holdings screenshot of the holdings from the website, Here is the homepage: https://www.ishares.com/us/products/239594/ishares-msci-acwi-ex-us-etf  \n\nThe holdings table on that site doesn't really have a good view on my end that shows the names of the stocks and the percentages in the same view. On my end, I have to scroll to the side to see one or the other. In cases like this, a pie chart is fine, maybe two pie charts with one showing 16% top 10 and other other is voo with 40% in top 10.",
+    "isReply": "no",
+    "frame": 15981,
+    "timecode": "00:11:05:21"
+  },
+  {
+    "num": 23,
+    "commenter": "Brian",
+    "comment": "1 Y return chart: https://stockanalysis.com/etf/compare/voo-vs-acwx/?r=1Y",
+    "isReply": "no",
+    "frame": 16673,
+    "timecode": "00:11:34:16"
+  },
+  {
+    "num": 24,
+    "commenter": "Brian",
+    "comment": "As with global comment, text here is quite small...",
+    "isReply": "no",
+    "frame": 17570,
+    "timecode": "00:12:12:01"
+  },
+  {
+    "num": 25,
+    "commenter": "Brian",
+    "comment": "Here would be the overview page for AVDV, and then we show the 3-Gap Trifecta info you have as I introduce them in my voiceover. I think a vertically arranged list would look better and be more conducive to text sizing / arranging. Currently, the three points are arranged horizontally.",
+    "isReply": "yes",
+    "frame": 17570,
+    "timecode": "00:12:12:01"
+  },
+  {
+    "num": 26,
+    "commenter": "Brian",
+    "comment": "5 year chart: https://stockanalysis.com/etf/compare/voo-vs-acwx-vs-avdv/?r=5Y  \n\n1 year chart: https://stockanalysis.com/etf/compare/voo-vs-acwx-vs-avdv/?r=1Y",
+    "isReply": "no",
+    "frame": 18819,
+    "timecode": "00:13:04:03"
+  },
+  {
+    "num": 27,
+    "commenter": "Brian",
+    "comment": "No text here, instead, show a screenshot of the expense ratio from the Fund's website. Then, when I am saying \"I don't have an alternative for you...\" that part cna just be A-Roll",
+    "isReply": "no",
+    "frame": 19005,
+    "timecode": "00:13:11:21"
+  },
+  {
+    "num": 28,
+    "commenter": "Brian",
+    "comment": "ETF Overview page here",
+    "isReply": "no",
+    "frame": 20064,
+    "timecode": "00:13:56:00"
+  },
+  {
+    "num": 29,
+    "commenter": "Brian",
+    "comment": "Sound effects were really loud there, check db levels",
+    "isReply": "no",
+    "frame": 20405,
+    "timecode": "00:14:10:04"
+  },
+  {
+    "num": 30,
+    "commenter": "Brian",
+    "comment": "Here I think horizontally arranged boxes would be better. Please include the logos for each fund provider to their respective ETF",
+    "isReply": "no",
+    "frame": 22150,
+    "timecode": "00:15:22:21"
+  },
+  {
+    "num": 31,
+    "commenter": "Brian",
+    "comment": "ETF Overview page would go here",
+    "isReply": "no",
+    "frame": 23259,
+    "timecode": "00:16:09:03"
+  },
+  {
+    "num": 32,
+    "commenter": "Brian",
+    "comment": "Then the text can come in",
+    "isReply": "no",
+    "frame": 23481,
+    "timecode": "00:16:18:09"
+  },
+  {
+    "num": 33,
+    "commenter": "Brian",
+    "comment": "The icons are all the same for the three features of the ETF, can you please find some variations that at least kind of correspond? stopwatch is fine for duration, dry powder could be a money symbol, state tax could be a government building symbol maybe?",
+    "isReply": "no",
+    "frame": 23661,
+    "timecode": "00:16:25:21"
+  },
+  {
+    "num": 34,
+    "commenter": "Brian",
+    "comment": "Either something like this: https://stockanalysis.com/etf/compare/voo-vs-tlt-vs-sgov/?r=5Y  \n\nOr better yet, a comparison of the max drawdowns of all three funds during the 2022 bear market. VOO wan around -25%, TLT (20 year Treasuries) was around -37%, and SGOV was 0% (no drawdown). I am envisioning vertical bars showing these percentages with the caption being something like \"maximum drawdown during 2022 bear market\"",
+    "isReply": "no",
+    "frame": 24439,
+    "timecode": "00:16:58:06"
+  },
+  {
+    "num": 35,
+    "commenter": "Brian",
+    "comment": "ETF overview page here",
+    "isReply": "no",
+    "frame": 25503,
+    "timecode": "00:17:42:15"
+  },
+  {
+    "num": 36,
+    "commenter": "Brian",
+    "comment": "Check out this link: https://advisors.vanguard.com/investments/products/bnd/vanguard-total-bond-market-etf  \n\nScroll down to \"Weighted Exposures\" and select the \"Issuer Type.\" This will show the data I am referencing, which we can show on screen and emphasize with a highlighter animation, or a rectangle that draws around the number(s) being referenced. I like that latter idea best as an emphasis option here.",
+    "isReply": "no",
+    "frame": 25781,
+    "timecode": "00:17:54:04"
+  },
+  {
+    "num": 37,
+    "commenter": "Brian",
+    "comment": "GLOBAL: for each ETF I would like a little more emphasis on where we are in the video. For example here we are talking about BND, which is our #2 option for the Diversifier ETF in the portfolio, but that gets lost in the little pill box at the top which has small font and low contrast with the background (Gold text + Light Gold pill box + Paper background).",
+    "isReply": "no",
+    "frame": 25886,
+    "timecode": "00:17:58:13"
+  },
+  {
+    "num": 38,
+    "commenter": "Brian",
+    "comment": "I think this is a very appropriate place for text, good work. Just the text sizes are all pretty small.",
+    "isReply": "no",
+    "frame": 27000,
+    "timecode": "00:18:45:00"
+  },
+  {
+    "num": 39,
+    "commenter": "Brian",
+    "comment": "ETF Overview page here",
+    "isReply": "no",
+    "frame": 29819,
+    "timecode": "00:20:42:10"
+  },
+  {
+    "num": 40,
+    "commenter": "Brian",
+    "comment": "Here we should show a long-term chart of gold that shows what I am talking about, emphasizing those sharp spikes and long doldrums. Like this chart with the 50 year view: https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart",
+    "isReply": "no",
+    "frame": 31109,
+    "timecode": "00:21:36:04"
+  },
+  {
+    "num": 41,
+    "commenter": "Brian",
+    "comment": "Okay here I like the vertical comparison, but what's up with those big chunks of white space in th ecards? Let's squish the cards down so the viewer can read the information without their eyes jumping around the screen.",
+    "isReply": "no",
+    "frame": 32218,
+    "timecode": "00:22:22:09"
+  },
+  {
+    "num": 42,
+    "commenter": "Brian",
+    "comment": "I don't think we need a second set of information...let's just pick one. Feels redundant, and this text goes away too quickly to read anyways.",
+    "isReply": "no",
+    "frame": 32497,
+    "timecode": "00:22:34:01"
+  },
+  {
+    "num": 43,
+    "commenter": "Brian",
+    "comment": "Here we should have text that \"summarizes\" the video. If the viewer does nothing else, they can pause and or take a screenshot here and get all the value of the video. Feel free to take up the whole page and make me a picture in picture and make it a whole slide that shows overarching topic: The S&P has never been more concentrated, therefore consider diversifying into a 3 etf portfolio. Along with the three sleeves, their weightings, and the options we discussed for each.",
+    "isReply": "no",
+    "frame": 32828,
+    "timecode": "00:22:47:19"
+  }
+]

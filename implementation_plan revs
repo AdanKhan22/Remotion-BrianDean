@@ -1,0 +1,101 @@
+# Brian Dean Revisions: 43 Frame.io Comments Action Plan
+
+We have thoroughly analyzed and parsed all **43 comments** from `1.1 - The BEST 3 ETF Portfolio for 2026 (to Grow Wealth and Dodge the AI Bubble).csv`. 
+
+Every comment has been matched to its exact scene file (`one.tsx` to `twentyEight.tsx`), timestamp, and visual deliverable.
+
+---
+
+## 1. Global Mandates (Apply Across Entire Project)
+
+Brian emphasized several high-priority global rules across multiple timestamps:
+
+| Mandate | Brian's Notes | Solution |
+|---|---|---|
+| **1. Text Size & White Space** | *Frames 3109, 13858, 27000*: "Text portions seem really small... notice how much white space there is as a result." | Enforce `56px`–`68px` card headers, `48px`–`54px` body/tags in deep ink `#1E1B16`, and eliminate microscopic secondary sentences. |
+| **2. Audio Levels (-20dB)** | *Frames 13606, 20405*: "Those clicky sound effects are a bit too loud... make sure sound effects are around -20db to -15db." | Lower `<Audio src={staticFile('pop-sfx.mp3')} volume={0.15} />` (approx -18dB to -20dB equivalent). |
+| **3. ETF Overview Pages** | *Frames 6114, 8425, 11158, 15424, 17570, 20064, 23259, 25503, 29819*: "For each ETF, when introduced, visual should be overview page from website." | High-fidelity UI mockup browser card showing the official fund header (Vanguard, Invesco, iShares, Avantis, Dimensional) before animating stats. |
+| **4. Breadcrumb / Progress Kicker** | *Frame 25886*: "Little more emphasis on where we are in the video... gets lost in little pill box with low contrast." | Use high-contrast badge banner with solid background and dark text (e.g. `[ SLEEVE 3: DIVERSIFIER • OPTION 2 ]`). |
+| **5. Reusable 'Definition' Graphic** | *Frames 6960, 10006*: "Set up a Definition graphic we can re-use in future videos." | Create a standardized editorial Definition Card layout for key concepts ("Market-Cap Weighted", "Equal-Weight", etc.). |
+
+---
+
+## 2. File-by-File Revision Mapping
+
+### Batch 1: The Intro & Problem Setup (Blocks 2–4: `one.tsx` to `three.tsx`)
+- **[#1] `one.tsx` (Frame 1005 / 00:00:41)**: 
+  - *Request*: 1999 S&P 500 top 10 holdings pie chart (Finhacker link: GE, Walmart, Exxon, Merck, Citigroup). Slices are diverse and non-tech.
+- **[#2] `two.tsx` (Frame 1851 / 00:01:17)**:
+  - *Request*: Today's top 10 S&P holdings pie chart showing massive 38% AI/tech concentration slice vs remaining index.
+- **[#3] `two.tsx` (Frame 2220 / 00:01:32)**:
+  - *Request*: Multiple AI investment cycle news headlines (Goldman Sachs $1T forecast, CNBC Big Tech AI cash, Reuters Bridgewater $650B) popping in when Brian says "hundreds of billions".
+- **[#4] `three.tsx` (Frame 2800 / 00:01:56)**:
+  - *Request*: S&P 500 "Growth of $10,000" chart visual (WhatIfInvest calculator style).
+
+---
+
+### Batch 2: Core Sleeve 1 — VOO, RSP, VTI (Blocks 8–11: `six.tsx` to `nine.tsx`)
+- **[#6] `six.tsx` (Frame 6114 / 00:04:14)**:
+  - *Request*: Vanguard VOO Overview page UI mockup at introduction.
+- **[#7 & #8] `six.tsx` (Frames 6143, 6499 / 00:04:15 - 00:04:30)**:
+  - *Request*: Cut early text during speaking intro. Delay performance visual to 00:04:30 with 100-year upward S&P compounding chart.
+- **[#9] `six.tsx` (Frame 6960 / 00:04:50)**:
+  - *Request*: Standardized "Definition" Card graphic explaining *Market-Cap Weighted*.
+- **[#10 & #11] `seven.tsx` (Frames 8425, 8719 / 00:05:51 - 00:06:03)**:
+  - *Request*: Invesco RSP Overview page UI mockup. Contrast RSP holdings (NVDA 0.22%) vs VOO (NVDA at top ~7-8%).
+- **[#12 & #13] `seven.tsx` (Frame 10006 / 00:06:56)**:
+  - *Request*: Cut early text before performance mention; replace with "Definition" Graphic explaining *Equal-Weight Strategy*.
+- **[#14 & #15] `seven.tsx` (Frames 10374, 10522 / 00:07:12 - 00:07:18)**:
+  - *Request*: 5-Year total return comparison chart (StockAnalysis style: VOO +83% vs RSP +51%).
+- **[#16] `eight.tsx` (Frame 11158 / 00:07:44)**:
+  - *Request*: Vanguard VTI Overview page UI mockup.
+- **[#17] `nine.tsx` (Frame 12961 / 00:09:00)**:
+  - *Request*: 5-Year shootout chart comparing VOO (+83%) vs VTI (+74%) vs RSP (+51%).
+
+---
+
+### Batch 3: Complementary Sleeve 2 — ACWX, AVDV, DFIV (Blocks 13–17: `eleven.tsx` to `fifteen.tsx`)
+- **[#21 & #22] `eleven.tsx` (Frames 15424, 15981 / 00:10:42 - 00:11:05)**:
+  - *Request*: iShares ACWX Overview page UI. Holdings pie chart comparing top 10 concentration: ACWX (16%) vs VOO (40%).
+- **[#23] `twelve.tsx` (Frame 16673 / 00:11:34)**:
+  - *Request*: 1-Year return chart comparing VOO vs ACWX.
+- **[#24 & #25] `thirteen.tsx` (Frame 17570 / 00:12:12)**:
+  - *Request*: Avantis AVDV Overview page UI. Convert 3-Gap Factor Trifecta to a vertical arranged list for better readability.
+- **[#26 & #27] `fourteen.tsx` (Frames 18819, 19005 / 00:13:04 - 00:13:11)**:
+  - *Request*: 5-Year & 1-Year comparison chart (VOO vs ACWX vs AVDV). Fund expense ratio card (0.36%).
+- **[#28] `fifteen.tsx` (Frame 20064 / 00:13:56)**:
+  - *Request*: Dimensional DFIV Overview page UI mockup.
+
+---
+
+### Batch 4: Diversifier Sleeve 3 — SGOV, BND, Gold (Blocks 20–26: `eighteen.tsx` to `twentyFour.tsx`)
+- **[#30] `seventeen.tsx` (Frame 22150 / 00:15:22)**:
+  - *Request*: Sleeve 3 intro with horizontal cards featuring official provider logos (iShares, Vanguard, SPDR).
+- **[#31, #32, #33] `eighteen.tsx` (Frames 23259, 23481, 23661 / 00:16:09 - 00:16:25)**:
+  - *Request*: iShares SGOV Overview page. Stagger text after overview. Diverse icons: Stopwatch (Duration), Money (Dry Powder), Government Building (State Tax Exemption).
+- **[#34] `nineteen.tsx` (Frame 24439 / 00:16:58)**:
+  - *Request*: 2022 Bear Market Max Drawdown bar chart shootout: VOO (-25%), TLT (-37%), SGOV (0% No Drawdown).
+- **[#35, #36, #37] `twenty.tsx` (Frames 25503, 25781, 25886 / 00:17:42 - 00:17:58)**:
+  - *Request*: Vanguard BND Overview page. Vanguard Weighted Exposures / Issuer Type breakdown with highlighter rectangle animation. Strong high-contrast breadcrumb badge.
+- **[#39 & #40] `twentyFour.tsx` & `twentyFive.tsx` (Frames 29819, 31109 / 00:20:42 - 00:21:36)**:
+  - *Request*: GLD/IAU Overview page. Historical 50-year gold chart highlighting sharp spikes and long stagnation doldrums.
+
+---
+
+### Batch 5: Portfolio Blueprints & Synthesis (Blocks 28–29: `twentySix.tsx` to `twentySeven.tsx`)
+- **[#41 & #42] `twentySix.tsx` (Frames 32218, 32497 / 00:22:22 - 00:22:34)**:
+  - *Request*: Squish cards down to eliminate empty space. Pick one clear set of info instead of two redundant sets.
+- **[#43] `twentySeven.tsx` (Frame 32828 / 00:22:47)**:
+  - *Request*: Master Summary Slide (The ultimate screenshot slide!): Picture-in-picture style, overarching summary (S&P concentration risk -> 3 ETF portfolio), 3 sleeves with weightings (60% Core, 20-30% Complementary, 10-20% Diversifier), and all selected options.
+
+---
+
+## 3. Recommended Phased Execution Workflow
+
+To ensure smooth progress with immediate visual verification:
+
+1. **Batch 1 (Beats 1–4)**: Focus on the Intro Pie Charts (1999 vs Today), AI headlines, and Growth of $10K chart.
+2. **Batch 2 (Beats 6–9)**: Core Sleeve (VOO/RSP/VTI overview pages, NVDA 0.22% comparison, Definition Graphic template, and 5Y shootout).
+3. **Batch 3 (Beats 11–15)**: Complementary Sleeve (ACWX/AVDV/DFIV overview pages, vertical 3-gap layout, and Alpha shootout).
+4. **Batch 4 (Beats 17–24)**: Diversifier Sleeve (SGOV 2022 0% drawdown chart, BND weighted exposure table, Provider logos, and 50-Yr Gold chart).
+5. **Batch 5 (Beats 26–27)**: Blueprint synthesis, squished cards, and the Master Summary Screenshot slide.
