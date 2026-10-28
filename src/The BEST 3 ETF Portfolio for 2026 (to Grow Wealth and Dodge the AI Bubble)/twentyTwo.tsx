@@ -95,16 +95,10 @@ const Beat1_2004CaseStudy: React.FC = () => {
   return (
     <LeftZone>
       <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '48px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <History size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            HISTORICAL CASE STUDY · 2004–2006
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
           17 Fed Rate Hikes In a Row
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+        <p style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
           When starting yields were ~4%, the Total Bond Market still posted positive compounding
         </p>
       </div>
@@ -113,9 +107,8 @@ const Beat1_2004CaseStudy: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.ACCENT_HERO}`,
             borderRadius: '36px',
-            padding: '48px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -125,25 +118,21 @@ const Beat1_2004CaseStudy: React.FC = () => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <Award size={36} color={COLORS.ACCENT_HERO} />
-            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: COLORS.ACCENT_HERO, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            <Award size={44} color={COLORS.ACCENT_HERO} />
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 800, color: COLORS.ACCENT_HERO, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
               Total Bond Market Return
             </span>
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0, margin: '16px 0' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '140px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0, margin: '24px 0' }}>
             +4.0% / yr
-          </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 700, color: COLORS.INK_PRIMARY }}>
-            Gained steady value through all 17 interest rate hikes
           </span>
         </div>
 
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.BORDER_CARD}`,
             borderRadius: '36px',
-            padding: '48px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -153,17 +142,9 @@ const Beat1_2004CaseStudy: React.FC = () => {
             opacity: sidePop,
           }}
         >
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', backgroundColor: `${COLORS.ACCENT_DETAIL}20`, padding: '8px 20px', borderRadius: '16px', width: 'fit-content' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, textTransform: 'uppercase' }}>
-              The Takeaway
-            </span>
-          </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.2 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.2 }}>
             Hikes Are Not a Disaster
           </span>
-          <p style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.4, margin: 0 }}>
-            Rising rates do not destroy bond portfolios when starting yields are already elevated at 4% to 5%.
-          </p>
         </div>
       </div>
     </LeftZone>
@@ -181,16 +162,10 @@ const Beat2_2008CrisisFlight: React.FC = () => {
   return (
     <LeftZone>
       <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '48px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <ShieldCheck size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            RECESSION UPSIDE · BND FLIGHT TO SAFETY
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
           2008 Crisis Flight to Safety
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+        <p style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
           When the Fed aggressively cuts rates in an equity crash, bond capital surges
         </p>
       </div>
@@ -199,9 +174,8 @@ const Beat2_2008CrisisFlight: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.ACCENT_DETAIL}`,
             borderRadius: '36px',
-            padding: '48px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
             gap: '18px',
@@ -211,25 +185,21 @@ const Beat2_2008CrisisFlight: React.FC = () => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <TrendingUp size={36} color={COLORS.ACCENT_DETAIL} />
-            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: COLORS.ACCENT_DETAIL, textTransform: 'uppercase' }}>
+            <TrendingUp size={44} color={COLORS.ACCENT_DETAIL} />
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 800, color: COLORS.ACCENT_DETAIL, textTransform: 'uppercase' }}>
               BND Return in 2008
             </span>
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, lineHeight: 1.0 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '160px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, lineHeight: 1.0 }}>
             +5.0%
-          </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
-            Capital appreciation triggered as the Fed slashed interest rates to zero.
           </span>
         </div>
 
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.ACCENT_NEGATIVE}`,
             borderRadius: '36px',
-            padding: '48px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
             gap: '18px',
@@ -239,16 +209,13 @@ const Beat2_2008CrisisFlight: React.FC = () => {
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <TrendingDown size={36} color={COLORS.ACCENT_NEGATIVE} />
-            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase' }}>
+            <TrendingDown size={44} color={COLORS.ACCENT_NEGATIVE} />
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase' }}>
               S&P 500 in 2008
             </span>
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '160px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0 }}>
             -37.0%
-          </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
-            Historic equity collapse during the Great Financial Crisis.
           </span>
         </div>
       </div>

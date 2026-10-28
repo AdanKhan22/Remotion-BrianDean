@@ -92,18 +92,18 @@ const Beat1_RateDilemma: React.FC = () => {
 
   return (
     <LeftZone>
-      <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '48px' }}>
+      <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '44px' }}>
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
           <AlertCircle size={36} color="#D4A84B" />
           <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
             SLEEVE 3 · DIVERSIFIER OPTION 2 · BND
           </span>
         </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '104px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.05 }}>
           Why Buy Bonds in 2026?
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
-          Bond prices fall when interest rates rise — so why consider BND today?
+        <p style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+          Bond prices fall when rates rise — so why consider BND today?
         </p>
       </div>
 
@@ -111,9 +111,8 @@ const Beat1_RateDilemma: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.ACCENT_NEGATIVE}`,
-            borderRadius: '36px',
-            padding: '48px 36px',
+            borderRadius: '40px',
+            padding: '52px 44px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -122,13 +121,13 @@ const Beat1_RateDilemma: React.FC = () => {
             opacity: statPop,
           }}
         >
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-            10-Year Treasury Benchmark
+          <span style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+            10-YEAR BENCHMARK
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0, margin: '16px 0' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '160px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 0.95, margin: '16px 0' }}>
             5.0%
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 700, color: COLORS.INK_PRIMARY }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
             Crossed 5% for first time since 2007
           </span>
         </div>
@@ -136,28 +135,22 @@ const Beat1_RateDilemma: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.BORDER_CARD}`,
-            borderRadius: '36px',
-            padding: '48px 36px',
+            borderRadius: '40px',
+            padding: '52px 44px',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            gap: '18px',
+            gap: '20px',
             boxShadow: '0 16px 40px rgba(0, 0, 0, 0.05)',
             transform: `translateY(${interpolate(sidePop, [0, 1], [40, 0])}px)`,
             opacity: sidePop,
           }}
         >
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', backgroundColor: `${COLORS.ACCENT_HERO}20`, padding: '8px 20px', borderRadius: '16px', width: 'fit-content' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 900, color: COLORS.ACCENT_HERO, textTransform: 'uppercase' }}>
-              Core Fixed-Income Principle
-            </span>
-          </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.2 }}>
-            The Starting Yield Rule
+          <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.15 }}>
+            Starting Yield Governs Return
           </span>
-          <p style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.4, margin: 0 }}>
-            Bond performance is governed by <span style={{ color: COLORS.INK_PRIMARY, fontWeight: 800 }}>where yields start</span>, not just which direction the Fed moves rates.
+          <p style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.35, margin: 0 }}>
+            Returns depend primarily on <span style={{ color: COLORS.INK_PRIMARY, fontWeight: 900 }}>where yields begin</span>, not just Fed rate directions.
           </p>
         </div>
       </div>
@@ -179,14 +172,14 @@ const Beat2_ZeroCushion2022: React.FC = () => {
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
           <TrendingDown size={36} color="#D4A84B" />
           <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            THE 2022 ANATOMY
+            THE 2022 LESSON
           </span>
         </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
-          Starting at 0% Yield = Zero Cushion
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '104px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.05 }}>
+          0% Starting Yield = Zero Cushion
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
-          When starting yields were near zero, rate hikes caused unprotected capital destruction
+        <p style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+          When starting yields were rock bottom, rate hikes had zero income protection
         </p>
       </div>
 
@@ -194,56 +187,46 @@ const Beat2_ZeroCushion2022: React.FC = () => {
         style={{
           width: '100%',
           backgroundColor: COLORS.BG_ELEVATED,
-          border: `3.5px solid ${COLORS.BORDER_CARD}`,
           borderRadius: '40px',
-          padding: '48px 40px',
+          padding: '60px 40px',
           display: 'grid',
-          gridTemplateColumns: '1fr 50px 1fr 50px 1fr',
+          gridTemplateColumns: '1fr 60px 1fr 60px 1fr',
           alignItems: 'center',
-          gap: '16px',
+          gap: '20px',
           boxShadow: '0 20px 50px rgba(0, 0, 0, 0.06)',
           transform: `translateY(${interpolate(mathPop, [0, 1], [40, 0])}px)`,
           opacity: mathPop,
         }}
       >
-        <div style={{ textAlign: 'center', backgroundColor: COLORS.BG_BASE, padding: '36px 20px', borderRadius: '28px', border: `2.5px solid ${COLORS.BORDER_CARD}` }}>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
-            2022 Starting Yield
+        <div style={{ textAlign: 'center', backgroundColor: COLORS.BG_BASE, padding: '40px 24px', borderRadius: '32px' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+            STARTING YIELD
           </span>
-          <div style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: '8px 0' }}>
+          <div style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: '10px 0', lineHeight: 1.0 }}>
             1.5%
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-            Negligible cash income
-          </span>
         </div>
 
-        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>+</div>
+        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '80px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>+</div>
 
-        <div style={{ textAlign: 'center', backgroundColor: `${COLORS.ACCENT_NEGATIVE}10`, padding: '36px 20px', borderRadius: '28px', border: `3px solid ${COLORS.ACCENT_NEGATIVE}` }}>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase' }}>
-            Fed Rate Hikes
+        <div style={{ textAlign: 'center', backgroundColor: `${COLORS.ACCENT_NEGATIVE}12`, padding: '40px 24px', borderRadius: '32px' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase' }}>
+            FED RATE HIKES
           </span>
-          <div style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, margin: '8px 0' }}>
+          <div style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, margin: '10px 0', lineHeight: 1.0 }}>
             +3.0%
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.ACCENT_NEGATIVE }}>
-            Aggressive hike shock
-          </span>
         </div>
 
-        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>=</div>
+        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '80px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>=</div>
 
-        <div style={{ textAlign: 'center', backgroundColor: '#1E1B16', padding: '36px 20px', borderRadius: '28px' }}>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase' }}>
-            BND Price Collapse
+        <div style={{ textAlign: 'center', backgroundColor: '#1E1B16', padding: '40px 24px', borderRadius: '32px' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: '#D4A84B', textTransform: 'uppercase' }}>
+            TOTAL LOSS
           </span>
-          <div style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: '#FCFAF6', margin: '8px 0' }}>
+          <div style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: '#FCFAF6', margin: '10px 0', lineHeight: 1.0 }}>
             -13.0%
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: '#E8E1D5' }}>
-            Uncushioned net drawdown
-          </span>
         </div>
       </div>
     </LeftZone>
@@ -264,14 +247,14 @@ const Beat3_YieldCushionSimulator: React.FC = () => {
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
           <Calculator size={36} color="#D4A84B" />
           <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            THE 5% CUSHION SIMULATOR
+            THE 5% CUSHION TODAY
           </span>
         </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '104px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.05 }}>
           High Starting Yield Absorbs Hikes
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
-          If rates climb another 1%, incoming coupon interest buffers capital losses
+        <p style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+          Coupons buffer price drops even if rates climb another 1%
         </p>
       </div>
 
@@ -279,56 +262,46 @@ const Beat3_YieldCushionSimulator: React.FC = () => {
         style={{
           width: '100%',
           backgroundColor: COLORS.BG_ELEVATED,
-          border: `3.5px solid ${COLORS.BORDER_CARD}`,
           borderRadius: '40px',
-          padding: '48px 40px',
+          padding: '60px 40px',
           display: 'grid',
-          gridTemplateColumns: '1fr 50px 1fr 50px 1fr',
+          gridTemplateColumns: '1fr 60px 1fr 60px 1fr',
           alignItems: 'center',
-          gap: '16px',
+          gap: '20px',
           boxShadow: '0 20px 50px rgba(0, 0, 0, 0.06)',
           transform: `translateY(${interpolate(simPop, [0, 1], [40, 0])}px)`,
           opacity: simPop,
         }}
       >
-        <div style={{ textAlign: 'center', backgroundColor: `${COLORS.ACCENT_NEGATIVE}10`, padding: '36px 20px', borderRadius: '28px', border: `3px solid ${COLORS.ACCENT_NEGATIVE}` }}>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase' }}>
-            Price Decline
+        <div style={{ textAlign: 'center', backgroundColor: `${COLORS.ACCENT_NEGATIVE}12`, padding: '40px 24px', borderRadius: '32px' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase' }}>
+            PRICE DROP
           </span>
-          <div style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, margin: '8px 0' }}>
+          <div style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, margin: '10px 0', lineHeight: 1.0 }}>
             -6.0%
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.ACCENT_NEGATIVE }}>
-            On +1% Fed rate hike
-          </span>
         </div>
 
-        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>+</div>
+        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '80px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>+</div>
 
-        <div style={{ textAlign: 'center', backgroundColor: `${COLORS.ACCENT_HERO}15`, padding: '36px 20px', borderRadius: '28px', border: `3px solid ${COLORS.ACCENT_HERO}` }}>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: COLORS.ACCENT_HERO, textTransform: 'uppercase' }}>
-            Interest Inflow
+        <div style={{ textAlign: 'center', backgroundColor: `${COLORS.ACCENT_HERO}15`, padding: '40px 24px', borderRadius: '32px' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.ACCENT_HERO, textTransform: 'uppercase' }}>
+            INCOME YIELD
           </span>
-          <div style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: COLORS.ACCENT_HERO, margin: '8px 0' }}>
+          <div style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: COLORS.ACCENT_HERO, margin: '10px 0', lineHeight: 1.0 }}>
             +5.0%
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.ACCENT_HERO }}>
-            Annual income collected
-          </span>
         </div>
 
-        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>=</div>
+        <div style={{ textAlign: 'center', fontFamily: FONTS.main, fontSize: '80px', fontWeight: 900, color: COLORS.INK_TERTIARY }}>=</div>
 
-        <div style={{ textAlign: 'center', backgroundColor: '#1E1B16', padding: '36px 20px', borderRadius: '28px' }}>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase' }}>
-            Net Total Return
+        <div style={{ textAlign: 'center', backgroundColor: '#1E1B16', padding: '40px 24px', borderRadius: '32px' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: '#D4A84B', textTransform: 'uppercase' }}>
+            NET RESULT
           </span>
-          <div style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: '#FCFAF6', margin: '8px 0' }}>
+          <div style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: '#FCFAF6', margin: '10px 0', lineHeight: 1.0 }}>
             -1.0%
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: '#D4A84B' }}>
-            Plus 6% forward yield!
-          </span>
         </div>
       </div>
     </LeftZone>

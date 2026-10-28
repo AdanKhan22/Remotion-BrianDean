@@ -134,7 +134,7 @@ const QuestionRow: React.FC<{
       }}
     >
       <div style={{ backgroundColor: iconBg, padding: '24px', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexShrink: 0 }}>
-        {React.cloneElement(icon as React.ReactElement, { color: isHero ? COLORS.BG_BASE : COLORS.INK_PRIMARY, size: 64, strokeWidth: 2.5 })}
+        {React.cloneElement(icon as React.ReactElement<any>, { color: isHero ? COLORS.BG_BASE : COLORS.INK_PRIMARY, size: 64, strokeWidth: 2.5 })}
       </div>
       <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 700, color: textColor, lineHeight: 1.2, letterSpacing: '-0.01em' }}>
         {text}

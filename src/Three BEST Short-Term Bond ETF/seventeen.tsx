@@ -141,7 +141,7 @@ const RoadmapStep: React.FC<{
           Step {stepNum}
         </span>
         <div style={{ backgroundColor: iconBg, padding: '32px', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          {React.cloneElement(icon as React.ReactElement, { color: isHero ? COLORS.BG_BASE : COLORS.INK_PRIMARY, size: 80, strokeWidth: 2 })}
+          {React.cloneElement(icon as React.ReactElement<any>, { color: isHero ? COLORS.BG_BASE : COLORS.INK_PRIMARY, size: 80, strokeWidth: 2 })}
         </div>
       </div>
       

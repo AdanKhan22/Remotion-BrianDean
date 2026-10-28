@@ -92,16 +92,10 @@ const Beat1_TrailingDrawdown: React.FC = () => {
   return (
     <LeftZone>
       <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '48px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <TrendingDown size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            BND TRAILING PERFORMANCE
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
           Recent Historical Losses
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+        <p style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
           Dragged down by the aggressive 2022 Fed rate hiking cycle
         </p>
       </div>
@@ -110,50 +104,42 @@ const Beat1_TrailingDrawdown: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.ACCENT_NEGATIVE}`,
             borderRadius: '36px',
-            padding: '48px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '18px',
+            gap: '24px',
             boxShadow: '0 20px 50px rgba(181, 83, 60, 0.12)',
             transform: `translateY(${interpolate(cardsPop, [0, 1], [40, 0])}px)`,
             opacity: cardsPop,
           }}
         >
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Trailing 1-Year Return
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '140px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0 }}>
             -0.69%
-          </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_PRIMARY }}>
-            Sustained pressure as intermediate yields drifted higher
           </span>
         </div>
 
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.BORDER_CARD}`,
             borderRadius: '36px',
-            padding: '48px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '18px',
+            gap: '24px',
             boxShadow: '0 16px 40px rgba(0, 0, 0, 0.05)',
             transform: `translateY(${interpolate(cardsPop, [0, 1], [40, 0])}px)`,
             opacity: cardsPop,
           }}
         >
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
             Trailing 5-Year Return
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '140px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE, lineHeight: 1.0 }}>
             -3.0%
-          </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-            Reflecting the worst bond market drawdown in modern US history
           </span>
         </div>
       </div>
@@ -172,16 +158,10 @@ const Beat2_SimultaneousCrash: React.FC = () => {
   return (
     <LeftZone>
       <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '48px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <Flame size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            THE 2022 INFLATION ANOMALY
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.1 }}>
           When Bonds Failed to Protect
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+        <p style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
           In 2022, high inflation caused stocks and bonds to crash simultaneously
         </p>
       </div>
@@ -190,46 +170,42 @@ const Beat2_SimultaneousCrash: React.FC = () => {
         style={{
           width: '100%',
           backgroundColor: COLORS.BG_ELEVATED,
-          border: `3.5px solid ${COLORS.ACCENT_NEGATIVE}`,
           borderRadius: '40px',
-          padding: '48px 48px',
+          padding: '60px 48px',
           display: 'flex',
           flexDirection: 'column',
-          gap: '24px',
+          gap: '32px',
           boxShadow: '0 20px 50px rgba(181, 83, 60, 0.12)',
           transform: `translateY(${interpolate(alertPop, [0, 1], [40, 0])}px)`,
           opacity: alertPop,
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-          <div style={{ width: '72px', height: '72px', borderRadius: '20px', backgroundColor: `${COLORS.ACCENT_NEGATIVE}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <ShieldAlert size={44} color={COLORS.ACCENT_NEGATIVE} />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+          <div style={{ width: '84px', height: '84px', borderRadius: '24px', backgroundColor: `${COLORS.ACCENT_NEGATIVE}20`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <ShieldAlert size={52} color={COLORS.ACCENT_NEGATIVE} />
           </div>
           <div>
-            <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '64px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
               The Simultaneous Drawdown Trap
-            </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 600, color: COLORS.INK_SECONDARY, marginTop: '4px', display: 'block' }}>
-              Traditional 60/40 diversification broke down as both assets plunged in tandem
             </span>
           </div>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px', marginTop: '12px' }}>
           <div style={{ backgroundColor: '#1E1B16', borderRadius: '24px', padding: '28px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 800, color: '#FCFAF6' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 800, color: '#FCFAF6' }}>
               S&P 500 (2022):
             </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: '#D4A84B' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '66px', fontWeight: 900, color: '#D4A84B' }}>
               -18.0%
             </span>
           </div>
 
-          <div style={{ backgroundColor: `${COLORS.ACCENT_NEGATIVE}15`, border: `2.5px solid ${COLORS.ACCENT_NEGATIVE}`, borderRadius: '24px', padding: '28px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE }}>
+          <div style={{ backgroundColor: `${COLORS.ACCENT_NEGATIVE}15`, borderRadius: '24px', padding: '28px 36px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 800, color: COLORS.ACCENT_NEGATIVE }}>
               Total Bonds (2022):
             </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '66px', fontWeight: 900, color: COLORS.ACCENT_NEGATIVE }}>
               -13.0%
             </span>
           </div>

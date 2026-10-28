@@ -25,7 +25,6 @@ import {
   ShieldCheck,
   Landmark,
   Calculator,
-  Clock,
   AlertCircle,
   ArrowDown,
   Percent

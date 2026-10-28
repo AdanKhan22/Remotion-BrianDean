@@ -26,12 +26,9 @@ import {
   Calculator,
   MapPin,
   TrendingUp,
-  TrendingDown,
-  Lock,
   CalendarCheck,
   ShieldAlert,
   ShieldCheck,
-  Award,
   Zap
 } from 'lucide-react';
 

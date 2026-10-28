@@ -94,18 +94,10 @@ const Beat1_GLDOverview: React.FC = () => {
 
   return (
     <LeftZone>
-      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '24px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', alignSelf: 'flex-start' }}>
-        <Coins size={36} color="#D4A84B" />
-        <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-          SLEEVE 3 · DIVERSIFIER OPTION 3 · GLD
-        </span>
-      </div>
-
       <div
         style={{
           width: '100%',
           backgroundColor: COLORS.BG_ELEVATED,
-          border: `3.5px solid ${COLORS.BORDER_CARD}`,
           borderRadius: '36px',
           boxShadow: '0 24px 60px rgba(0, 0, 0, 0.10)',
           overflow: 'hidden',
@@ -115,45 +107,22 @@ const Beat1_GLDOverview: React.FC = () => {
           opacity: cardPop,
         }}
       >
-        {/* Browser Top Navigation Bar */}
-        <div style={{ height: '76px', backgroundColor: '#EBE5D8', borderBottom: `2px solid ${COLORS.BORDER_CARD}`, display: 'flex', alignItems: 'center', padding: '0 32px', gap: '24px' }}>
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <div style={{ width: '18px', height: '18px', borderRadius: '50%', backgroundColor: '#E06C54' }} />
-            <div style={{ width: '18px', height: '18px', borderRadius: '50%', backgroundColor: '#ECC94B' }} />
-            <div style={{ width: '18px', height: '18px', borderRadius: '50%', backgroundColor: '#48BB78' }} />
-          </div>
-          <div style={{ flex: 1, height: '46px', backgroundColor: '#FCFAF6', borderRadius: '12px', display: 'flex', alignItems: 'center', padding: '0 20px', gap: '12px', border: `1.5px solid ${COLORS.BORDER_CARD}` }}>
-            <Globe size={22} color={COLORS.INK_TERTIARY} />
-            <span style={{ fontFamily: FONTS.main, fontSize: '22px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-              https://www.spdrgoldshares.com
-            </span>
-          </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 900, color: COLORS.ACCENT_GOLD, letterSpacing: '0.04em' }}>
-            STATE STREET GLOBAL ADVISORS
-          </span>
-        </div>
 
-        {/* Content Area */}
-        <div style={{ padding: '44px 48px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
+        <div style={{ padding: '60px 48px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', backgroundColor: `${COLORS.ACCENT_GOLD}20`, padding: '6px 20px', borderRadius: '14px', marginBottom: '12px' }}>
-                <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 900, color: COLORS.ACCENT_GOLD }}>
-                  NYSE ARCA: GLD
-                </span>
-              </div>
-              <h1 style={{ fontFamily: FONTS.main, fontSize: '76px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em' }}>
+              <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em' }}>
                 SPDR® Gold Shares
               </h1>
-              <p style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '10px 0 0 0' }}>
+              <p style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '10px 0 0 0' }}>
                 100% physical gold bullion bars vaulted securely in London (HSBC Bank plc Vault)
               </p>
             </div>
             <div style={{ backgroundColor: '#1E1B16', padding: '18px 28px', borderRadius: '24px', textAlign: 'center' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '22px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase', display: 'block' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase', display: 'block' }}>
                 SLOT ALLOCATION
               </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 900, color: '#FCFAF6' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: '#FCFAF6' }}>
                 10-20%
               </span>
             </div>
@@ -161,47 +130,38 @@ const Beat1_GLDOverview: React.FC = () => {
 
           {/* 3 Metric Cards */}
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', transform: `translateY(${interpolate(metricsPop, [0, 1], [30, 0])}px)`, opacity: metricsPop }}>
-            <div style={{ backgroundColor: COLORS.BG_BASE, border: `2.5px solid ${COLORS.BORDER_CARD}`, borderRadius: '24px', padding: '30px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+            <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '24px', padding: '40px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
                 Expense Ratio
               </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '78px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0 }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0 }}>
                 0.40%
               </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Covers vault custody & insurance
-              </span>
             </div>
 
-            <div style={{ backgroundColor: COLORS.BG_BASE, border: `2.5px solid ${COLORS.BORDER_CARD}`, borderRadius: '24px', padding: '30px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+            <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '24px', padding: '40px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
                 2022 Crisis Return
               </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '78px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, lineHeight: 1.0 }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, lineHeight: 1.0 }}>
                 0.0%
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Held flat while stocks (-18%) & bonds (-13%) crashed
               </span>
             </div>
 
-            <div style={{ backgroundColor: COLORS.BG_BASE, border: `2.5px solid ${COLORS.BORDER_CARD}`, borderRadius: '24px', padding: '30px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+            <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '24px', padding: '40px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
                 Asset Backing
               </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '64px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.1 }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.1 }}>
                 Physical Bars
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Zero counterparty or credit risk
               </span>
             </div>
           </div>
 
           {/* Bottom Banner */}
           <div style={{ backgroundColor: '#1E1B16', borderRadius: '20px', padding: '22px 32px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <CheckCircle2 size={32} color="#D4A84B" />
-            <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 700, color: '#FCFAF6' }}>
+            <CheckCircle2 size={44} color="#D4A84B" />
+            <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 700, color: '#FCFAF6' }}>
               The Ultimate Stagflation Shield: Protects capital when both equity earnings and fiat bond yields fail.
             </span>
           </div>
@@ -222,18 +182,9 @@ const Beat2_GoldCycleShootout: React.FC = () => {
   return (
     <LeftZone>
       <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '44px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <TrendingUp size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            LONG-TERM GOLD CYCLE & 5-YEAR ALPHA
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '96px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
           The Surprising Performance King
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '12px 0 0 0' }}>
-          Historical data source: Macrotrends 50-Year Gold Chart & StockAnalysis Shootout
-        </p>
       </div>
 
       <div
@@ -250,83 +201,51 @@ const Beat2_GoldCycleShootout: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.ACCENT_HERO}`,
             borderRadius: '36px',
-            padding: '44px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             boxShadow: '0 20px 50px rgba(184, 134, 46, 0.12)',
           }}
         >
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
-              <Award size={36} color={COLORS.ACCENT_HERO} />
-              <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: COLORS.ACCENT_HERO, textTransform: 'uppercase' }}>
-                5-Year Cumulative Return
-              </span>
-            </div>
-            <span style={{ fontFamily: FONTS.main, fontSize: '130px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0, display: 'block' }}>
-              +134.0%
-            </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 700, color: COLORS.INK_PRIMARY, marginTop: '12px', display: 'block' }}>
-              The highest-returning ETF in the entire video over 5 years
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '12px' }}>
+            <Award size={44} color={COLORS.ACCENT_HERO} />
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.ACCENT_HERO, textTransform: 'uppercase' }}>
+              5-Year Cumulative Return
             </span>
           </div>
-
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '18px', marginTop: '24px' }}>
-            <div style={{ backgroundColor: COLORS.BG_BASE, padding: '20px 24px', borderRadius: '20px', border: `2px solid ${COLORS.BORDER_CARD}` }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY }}>
-                GLD 1-YEAR RETURN
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, display: 'block' }}>
-                +17.0%
-              </span>
-            </div>
-            <div style={{ backgroundColor: COLORS.BG_BASE, padding: '20px 24px', borderRadius: '20px', border: `2px solid ${COLORS.BORDER_CARD}` }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY }}>
-                EQUITY CORRELATION
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
-                ~0.00
-              </span>
-            </div>
-          </div>
+          <span style={{ fontFamily: FONTS.main, fontSize: '150px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0, display: 'block' }}>
+            +134.0%
+          </span>
         </div>
 
         {/* Right: Gold Cycle Mechanics Card */}
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.BORDER_CARD}`,
             borderRadius: '36px',
-            padding: '44px 36px',
+            padding: '60px 48px',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             boxShadow: '0 16px 40px rgba(0, 0, 0, 0.05)',
           }}
         >
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', backgroundColor: `${COLORS.ACCENT_DETAIL}20`, padding: '8px 20px', borderRadius: '16px', marginBottom: '18px' }}>
-              <Activity size={28} color={COLORS.ACCENT_DETAIL} />
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, textTransform: 'uppercase' }}>
-                Behavioral Profile
-              </span>
-            </div>
-            <h2 style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: '0 0 14px 0', lineHeight: 1.15 }}>
+            <h2 style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: '0 0 14px 0', lineHeight: 1.15 }}>
               Spikes & Doldrums
             </h2>
-            <p style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.45, margin: 0 }}>
+            <p style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.45, margin: 0 }}>
               Gold does not compound in a straight line. It experiences explosive rallies during fiat debasement and geopolitical crises, followed by long multidecade doldrums.
             </p>
           </div>
 
           <div style={{ backgroundColor: '#1E1B16', borderRadius: '22px', padding: '24px', marginTop: '20px' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 800, color: '#FCFAF6', display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 800, color: '#FCFAF6', display: 'block' }}>
               Portfolio Role:
             </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: '#D4A84B', marginTop: '6px', display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: '#D4A84B', marginTop: '6px', display: 'block' }}>
               An uncorrelated anchor providing liquidity to rebalance when US tech and bonds crash together.
             </span>
           </div>

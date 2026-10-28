@@ -158,18 +158,9 @@ export default function Block28_DiversifierDecisionMatrix() {
             transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`,
           }}
         >
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '14px', backgroundColor: '#1E1B16', padding: '10px 28px', borderRadius: '40px', width: 'fit-content' }}>
-            <Sparkles size={28} color="#D4A84B" />
-            <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-              SLEEVE 3 · DIVERSIFIER CONTENDERS (10–20%)
-            </span>
-          </div>
-          <h1 style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.15 }}>
+          <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.15 }}>
             Choosing Your Shield: SGOV vs BND vs GLD
           </h1>
-          <p style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
-            Match the diversifying asset directly to the specific macro risk you want to neutralize
-          </p>
         </div>
 
         {/* 3 Squished, Content-Filled Cards Side by Side (Fitting 2044px usable width) */}
@@ -181,13 +172,12 @@ export default function Block28_DiversifierDecisionMatrix() {
                 key={c.ticker}
                 style={{
                   backgroundColor: COLORS.BG_ELEVATED,
-                  border: `3px solid ${COLORS.BORDER_CARD}`,
-                  borderTop: `14px solid ${c.accentColor}`,
+                  borderTop: `16px solid ${c.accentColor}`,
                   borderRadius: '32px',
-                  padding: '36px 28px',
+                  padding: '48px 36px',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '20px',
+                  gap: '24px',
                   boxShadow: '0 16px 40px rgba(0, 0, 0, 0.07)',
                   transform: `translateY(${interpolate(pop, [0, 1], [40, 0])}px)`,
                   opacity: pop,
@@ -195,7 +185,7 @@ export default function Block28_DiversifierDecisionMatrix() {
               >
                 {/* Top Row: Provider & Icon */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                  <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: c.providerColor, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 800, color: c.providerColor, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                     {c.provider}
                   </span>
                   <div style={{ width: '56px', height: '56px', borderRadius: '16px', backgroundColor: `${c.accentColor}18`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -206,72 +196,37 @@ export default function Block28_DiversifierDecisionMatrix() {
                 {/* Ticker & Name */}
                 <div>
                   <div style={{ display: 'flex', alignItems: 'baseline', gap: '14px' }}>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '62px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+                    <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
                       {c.ticker}
                     </span>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 800, color: c.accentColor }}>
+                    <span style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 800, color: c.accentColor }}>
                       {c.roleTitle}
                     </span>
                   </div>
-                  <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.INK_SECONDARY, marginTop: '4px', display: 'block' }}>
+                  <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY, marginTop: '4px', display: 'block' }}>
                     {c.name}
                   </span>
                 </div>
 
                 {/* Key Attributes */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', backgroundColor: COLORS.BG_BASE, padding: '22px 24px', borderRadius: '20px', border: `2px solid ${COLORS.BORDER_CARD}` }}>
-                  <div>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '22px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase', display: 'block' }}>
-                      PRIMARY ADVANTAGE
-                    </span>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 700, color: COLORS.INK_PRIMARY, marginTop: '4px', display: 'block', lineHeight: 1.25 }}>
-                      {c.bestFor}
-                    </span>
-                  </div>
-                  <div>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '22px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase', display: 'block' }}>
-                      MACRO CRASH HEDGE
-                    </span>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.INK_SECONDARY, marginTop: '4px', display: 'block', lineHeight: 1.25 }}>
-                      {c.hedgeRole}
-                    </span>
-                  </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '10px' }}>
+                  <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 700, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
+                    {c.bestFor}
+                  </span>
+                  <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.35 }}>
+                    {c.hedgeRole}
+                  </span>
                 </div>
 
                 {/* 2022 Crisis Stress Test Score */}
-                <div style={{ backgroundColor: '#1E1B16', borderRadius: '20px', padding: '18px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: 'auto' }}>
-                  <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase' }}>
-                    2022 Crisis Return
-                  </span>
-                  <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6' }}>
+                <div style={{ marginTop: 'auto' }}>
+                  <span style={{ fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: c.accentColor }}>
                     {c.drawdown2022}
                   </span>
                 </div>
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom Verdict Banner */}
-        <div
-          style={{
-            marginTop: '32px',
-            width: '100%',
-            backgroundColor: '#1E1B16',
-            borderRadius: '24px',
-            padding: '22px 36px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '20px',
-            boxShadow: '0 16px 40px rgba(0,0,0,0.15)',
-            transform: `translateY(${interpolate(bannerPop, [0, 1], [30, 0])}px)`,
-            opacity: bannerPop,
-          }}
-        >
-          <CheckCircle2 size={38} color="#D4A84B" style={{ flexShrink: 0 }} />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 700, color: '#FCFAF6', lineHeight: 1.35 }}>
-            Decision Rule: Pick <strong style={{ color: '#D4A84B' }}>SGOV</strong> for risk-free cash, <strong style={{ color: '#D4A84B' }}>BND</strong> for recession rate cuts, or <strong style={{ color: '#D4A84B' }}>GLD</strong> to hedge inflation & dollar debasement.
-          </span>
         </div>
       </LeftZone>
     </AbsoluteFill>

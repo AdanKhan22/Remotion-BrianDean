@@ -103,25 +103,10 @@ const Beat1_BlueprintRecap: React.FC = () => {
           transform: `translateY(${interpolate(titlePop, [0, 1], [30, 0])}px)`,
         }}
       >
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '14px 40px', borderRadius: '40px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <Sparkles color="#D4A84B" size={38} />
-          <span
-            style={{
-              fontFamily: FONTS.main,
-              fontSize: '34px',
-              fontWeight: 900,
-              color: '#FCFAF6',
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-            }}
-          >
-            PORTFOLIO BLUEPRINT SUMMARY
-          </span>
-        </div>
         <h2
           style={{
             fontFamily: FONTS.main,
-            fontSize: '108px',
+            fontSize: '130px',
             fontWeight: 900,
             color: COLORS.INK_PRIMARY,
             margin: 0,
@@ -131,9 +116,6 @@ const Beat1_BlueprintRecap: React.FC = () => {
         >
           Your All-Weather 2026 Strategy
         </h2>
-        <p style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
-          3 purposeful sleeves working together to maximize return and hedge AI bubble risks
-        </p>
       </div>
 
       {/* 3 Pillars Showcase */}
@@ -143,31 +125,29 @@ const Beat1_BlueprintRecap: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '40px',
-            border: `4px solid ${COLORS.BORDER_CARD}`,
             borderTop: `16px solid ${COLORS.ACCENT_HERO}`,
-            padding: '48px 44px',
+            padding: '60px 44px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '20px',
+            gap: '30px',
             opacity: card1,
             transform: `translateY(${interpolate(card1, [0, 1], [35, 0])}px)`,
             boxShadow: '0 24px 50px rgba(0, 0, 0, 0.08)',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: COLORS.ACCENT_HERO }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.ACCENT_HERO }}>
               SLEEVE 1
             </span>
-            <TrendingUp color={COLORS.ACCENT_HERO} size={44} />
+            <TrendingUp color={COLORS.ACCENT_HERO} size={52} />
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.9 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '150px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.9 }}>
             60%
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
             Core Compounder
           </span>
-          <div style={{ height: '2px', backgroundColor: COLORS.BG_RECESSED, width: '100%' }} />
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 700, color: COLORS.ACCENT_HERO }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '60px', fontWeight: 700, color: COLORS.ACCENT_HERO }}>
             VOO · RSP · VTI
           </span>
         </div>
@@ -177,31 +157,29 @@ const Beat1_BlueprintRecap: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '40px',
-            border: `4px solid ${COLORS.BORDER_CARD}`,
             borderTop: `16px solid ${COLORS.ACCENT_DETAIL}`,
-            padding: '48px 44px',
+            padding: '60px 44px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '20px',
+            gap: '30px',
             opacity: card2,
             transform: `translateY(${interpolate(card2, [0, 1], [35, 0])}px)`,
             boxShadow: '0 24px 50px rgba(0, 0, 0, 0.08)',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: COLORS.ACCENT_DETAIL }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.ACCENT_DETAIL }}>
               SLEEVE 2
             </span>
-            <Globe2 color={COLORS.ACCENT_DETAIL} size={44} />
+            <Globe2 color={COLORS.ACCENT_DETAIL} size={52} />
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.9 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '150px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.9 }}>
             20–30%
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
             Global Alpha Edge
           </span>
-          <div style={{ height: '2px', backgroundColor: COLORS.BG_RECESSED, width: '100%' }} />
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 700, color: COLORS.ACCENT_DETAIL }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '60px', fontWeight: 700, color: COLORS.ACCENT_DETAIL }}>
             ACWX · AVDV · DFIV
           </span>
         </div>
@@ -211,31 +189,29 @@ const Beat1_BlueprintRecap: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '40px',
-            border: `4px solid ${COLORS.BORDER_CARD}`,
             borderTop: `16px solid #1E1B16`,
-            padding: '48px 44px',
+            padding: '60px 44px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '20px',
+            gap: '30px',
             opacity: card3,
             transform: `translateY(${interpolate(card3, [0, 1], [35, 0])}px)`,
             boxShadow: '0 24px 50px rgba(0, 0, 0, 0.08)',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
               SLEEVE 3
             </span>
-            <ShieldCheck color={COLORS.INK_PRIMARY} size={44} />
+            <ShieldCheck color={COLORS.INK_PRIMARY} size={52} />
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.9 }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '150px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.9 }}>
             10–20%
           </span>
-          <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
             Asymmetric Shield
           </span>
-          <div style={{ height: '2px', backgroundColor: COLORS.BG_RECESSED, width: '100%' }} />
-          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 700, color: COLORS.INK_PRIMARY }}>
+          <span style={{ fontFamily: FONTS.main, fontSize: '60px', fontWeight: 700, color: COLORS.INK_PRIMARY }}>
             SGOV · BND · GLD
           </span>
         </div>
@@ -273,25 +249,10 @@ const Beat2_ChannelOutro: React.FC = () => {
           transform: `translateY(${interpolate(titlePop, [0, 1], [30, 0])}px)`,
         }}
       >
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '14px 40px', borderRadius: '40px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <Award color="#D4A84B" size={38} />
-          <span
-            style={{
-              fontFamily: FONTS.main,
-              fontSize: '34px',
-              fontWeight: 900,
-              color: '#FCFAF6',
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-            }}
-          >
-            THANK YOU FOR WATCHING
-          </span>
-        </div>
         <h2
           style={{
             fontFamily: FONTS.main,
-            fontSize: '108px',
+            fontSize: '130px',
             fontWeight: 900,
             color: COLORS.INK_PRIMARY,
             margin: 0,
@@ -301,9 +262,6 @@ const Beat2_ChannelOutro: React.FC = () => {
         >
           Invest With Confidence in 2026
         </h2>
-        <p style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
-          Subscribe to Pine Creek Capital Management for ongoing portfolio research
-        </p>
       </div>
 
       {/* 3 Call-To-Action Interactive Cards */}
@@ -313,8 +271,7 @@ const Beat2_ChannelOutro: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '36px',
-            border: `4px solid ${COLORS.ACCENT_HERO}`,
-            padding: '36px 56px',
+            padding: '48px 56px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -327,37 +284,21 @@ const Beat2_ChannelOutro: React.FC = () => {
             <div
               style={{
                 backgroundColor: COLORS.ACCENT_HERO,
-                padding: '24px',
+                padding: '32px',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <BellRing color={COLORS.BG_BASE} size={52} />
+              <BellRing color={COLORS.BG_BASE} size={64} />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
                 Subscribe to the Channel
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Stay ahead of market shifts & institutional ETF research
               </span>
             </div>
           </div>
-          <span
-            style={{
-              fontFamily: FONTS.main,
-              fontSize: '34px',
-              fontWeight: 800,
-              backgroundColor: '#1E1B16',
-              padding: '16px 36px',
-              borderRadius: '24px',
-              color: '#FCFAF6',
-            }}
-          >
-            JOIN NOW
-          </span>
         </div>
 
         {/* Comment */}
@@ -365,8 +306,7 @@ const Beat2_ChannelOutro: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '36px',
-            border: `3px solid ${COLORS.BORDER_CARD}`,
-            padding: '36px 56px',
+            padding: '48px 56px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -379,38 +319,21 @@ const Beat2_ChannelOutro: React.FC = () => {
             <div
               style={{
                 backgroundColor: COLORS.ACCENT_DETAIL,
-                padding: '24px',
+                padding: '32px',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <MessageSquare color={COLORS.BG_BASE} size={52} />
+              <MessageSquare color={COLORS.BG_BASE} size={64} />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
                 Share Your Allocation in Comments
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Which 3 ETFs make up your 2026 wealth-building fortress?
               </span>
             </div>
           </div>
-          <span
-            style={{
-              fontFamily: FONTS.main,
-              fontSize: '34px',
-              fontWeight: 800,
-              backgroundColor: COLORS.BG_BASE,
-              border: `2px solid ${COLORS.BORDER_CARD}`,
-              padding: '16px 36px',
-              borderRadius: '24px',
-              color: COLORS.INK_PRIMARY,
-            }}
-          >
-            DISCUSS
-          </span>
         </div>
 
         {/* Like */}
@@ -418,8 +341,7 @@ const Beat2_ChannelOutro: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '36px',
-            border: `3px solid ${COLORS.BORDER_CARD}`,
-            padding: '36px 56px',
+            padding: '48px 56px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -432,38 +354,21 @@ const Beat2_ChannelOutro: React.FC = () => {
             <div
               style={{
                 backgroundColor: COLORS.INK_PRIMARY,
-                padding: '24px',
+                padding: '32px',
                 borderRadius: '50%',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <ThumbsUp color={COLORS.BG_BASE} size={52} />
+              <ThumbsUp color={COLORS.BG_BASE} size={64} />
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
                 Like & Share With Fellow Investors
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Help more investors dodge bubble concentration risk
               </span>
             </div>
           </div>
-          <span
-            style={{
-              fontFamily: FONTS.main,
-              fontSize: '34px',
-              fontWeight: 800,
-              backgroundColor: COLORS.BG_BASE,
-              border: `2px solid ${COLORS.BORDER_CARD}`,
-              padding: '16px 36px',
-              borderRadius: '24px',
-              color: COLORS.INK_PRIMARY,
-            }}
-          >
-            SHARE
-          </span>
         </div>
       </div>
     </AbsoluteFill>

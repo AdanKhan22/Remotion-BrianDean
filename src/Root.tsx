@@ -56,8 +56,62 @@ import {
   ChapterCardDiversifier,
   ChapterCardBlueprint,
 } from "./The BEST 3 ETF Portfolio for 2026 (to Grow Wealth and Dodge the AI Bubble)/chapterCards";
+import { WhatIsAnEtfBlock1, BLOCK_1_DURATION } from "./What is An ETF/block1";
+import { WhatIsAnEtfBlock2, BLOCK_2_DURATION } from "./What is An ETF/block2";
+import { WhatIsAnEtfBlock3, BLOCK_3_DURATION } from "./What is An ETF/block3";
+import { WhatIsAnEtfBlock4, BLOCK_4_DURATION } from "./What is An ETF/block4";
+import { WhatIsAnEtfBlock5, BLOCK_5_DURATION } from "./What is An ETF/block5";
+import { WhatIsAnEtfBlock6, BLOCK_6_DURATION } from "./What is An ETF/block6";
+import { WhatIsAnEtfBlock7, BLOCK_7_DURATION } from "./What is An ETF/block7";
+import { WhatIsAnEtfBlock8, BLOCK_8_DURATION } from "./What is An ETF/block8";
+import { WhatIsAnEtfBlock9, BLOCK_9_DURATION } from "./What is An ETF/block9";
+import { WhatIsAnEtfBlock10, BLOCK_10_DURATION } from "./What is An ETF/block10";
+import { WhatIsAnEtfBlock11, BLOCK_11_DURATION } from "./What is An ETF/block11";
+import { WhatIsAnEtfBlock12, BLOCK_12_DURATION } from "./What is An ETF/block12";
+import { WhatIsAnEtfBlock13, BLOCK_13_DURATION } from "./What is An ETF/block13";
+import { WhatIsAnEtfBlock14, BLOCK_14_DURATION } from "./What is An ETF/block14";
+import {
+  WhatIsAnEtfDecoderShowcase,
+  DECODER_SHOWCASE_DURATION,
+  SINGLE_CARD_DURATION,
+  Decoder_ETF,
+  Decoder_MarketCapWeighted,
+  Decoder_IntermediatedOwnership,
+  Decoder_ExpenseRatio,
+  Decoder_InKindRedemption,
+  Decoder_CustodianBank,
+  Decoder_BidAskSpread,
+  Decoder_ETFDecay,
+  Decoder_InvoluntaryLiquidation,
+  Decoder_NAV,
+} from "./What is An ETF/DefinitionCards";
 
 const compositions: Array<{ id: string; component: React.FC; durationInFrames?: number }> = [
+  { id: "WhatIsAnEtf-DecoderShowcase", component: WhatIsAnEtfDecoderShowcase, durationInFrames: DECODER_SHOWCASE_DURATION },
+  { id: "WhatIsAnEtf-Decoder-ETF", component: Decoder_ETF, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-MarketCapWeighted", component: Decoder_MarketCapWeighted, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-IntermediatedOwnership", component: Decoder_IntermediatedOwnership, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-ExpenseRatio", component: Decoder_ExpenseRatio, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-InKindRedemption", component: Decoder_InKindRedemption, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-CustodianBank", component: Decoder_CustodianBank, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-BidAskSpread", component: Decoder_BidAskSpread, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-ETFDecay", component: Decoder_ETFDecay, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-InvoluntaryLiquidation", component: Decoder_InvoluntaryLiquidation, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Decoder-NAV", component: Decoder_NAV, durationInFrames: SINGLE_CARD_DURATION },
+  { id: "WhatIsAnEtf-Block1", component: WhatIsAnEtfBlock1, durationInFrames: BLOCK_1_DURATION },
+  { id: "WhatIsAnEtf-Block2", component: WhatIsAnEtfBlock2, durationInFrames: BLOCK_2_DURATION },
+  { id: "WhatIsAnEtf-Block3", component: WhatIsAnEtfBlock3, durationInFrames: BLOCK_3_DURATION },
+  { id: "WhatIsAnEtf-Block4", component: WhatIsAnEtfBlock4, durationInFrames: BLOCK_4_DURATION },
+  { id: "WhatIsAnEtf-Block5", component: WhatIsAnEtfBlock5, durationInFrames: BLOCK_5_DURATION },
+  { id: "WhatIsAnEtf-Block6", component: WhatIsAnEtfBlock6, durationInFrames: BLOCK_6_DURATION },
+  { id: "WhatIsAnEtf-Block7", component: WhatIsAnEtfBlock7, durationInFrames: BLOCK_7_DURATION },
+  { id: "WhatIsAnEtf-Block8", component: WhatIsAnEtfBlock8, durationInFrames: BLOCK_8_DURATION },
+  { id: "WhatIsAnEtf-Block9", component: WhatIsAnEtfBlock9, durationInFrames: BLOCK_9_DURATION },
+  { id: "WhatIsAnEtf-Block10", component: WhatIsAnEtfBlock10, durationInFrames: BLOCK_10_DURATION },
+  { id: "WhatIsAnEtf-Block11", component: WhatIsAnEtfBlock11, durationInFrames: BLOCK_11_DURATION },
+  { id: "WhatIsAnEtf-Block12", component: WhatIsAnEtfBlock12, durationInFrames: BLOCK_12_DURATION },
+  { id: "WhatIsAnEtf-Block13", component: WhatIsAnEtfBlock13, durationInFrames: BLOCK_13_DURATION },
+  { id: "WhatIsAnEtf-Block14", component: WhatIsAnEtfBlock14, durationInFrames: BLOCK_14_DURATION },
   { id: "One", component: One },
   { id: "Two", component: Two },
   { id: "Three", component: Three },
@@ -114,7 +168,7 @@ const compositions: Array<{ id: string; component: React.FC; durationInFrames?: 
   { id: "ChapterCardBlueprint", component: ChapterCardBlueprint, durationInFrames: 150 },
 ];
 
-const durationInFrames = 3000;
+const durationInFrames = 5000;
 const fps = 30;
 const width = 3840;
 const height = 2160;

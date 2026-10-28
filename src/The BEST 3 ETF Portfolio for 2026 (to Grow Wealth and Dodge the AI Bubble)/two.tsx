@@ -177,7 +177,7 @@ const Beat1_ModernConcentration: React.FC = () => {
           <svg width="700" height="700" viewBox="0 0 700 700" style={{ filter: 'drop-shadow(0 16px 36px rgba(181, 83, 60, 0.12))' }}>
             {/* Remainder Slice (62%) */}
             <path d={remainderPath} fill={COLORS.BG_RECESSED} stroke={COLORS.BG_ELEVATED} strokeWidth="3" />
-            
+
             {/* Top 10 Slices (38%) */}
             {renderedSlices.map((s, idx) => (
               <path key={idx} d={s.pathData} fill={s.color} stroke={COLORS.BG_ELEVATED} strokeWidth="3" />

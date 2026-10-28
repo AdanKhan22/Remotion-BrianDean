@@ -142,18 +142,9 @@ export default function Block29_MasterBlueprintSynthesisScene() {
             transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`,
           }}
         >
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 36px', borderRadius: '40px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-            <Camera size={34} color="#D4A84B" />
-            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-              MASTER 3-ETF PORTFOLIO BLUEPRINT · SUMMARY SLIDE
-            </span>
-          </div>
-          <h1 style={{ fontFamily: FONTS.main, fontSize: '104px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+          <h1 style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
             The Complete 2026 Asset Architecture
           </h1>
-          <p style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
-            Premise: S&P 500 concentration is at 100-year highs (38% top 10). Diversify across 3 structured sleeves.
-          </p>
         </div>
 
         {/* 3 Full Sleeves Displayed Side-by-Side */}
@@ -165,13 +156,12 @@ export default function Block29_MasterBlueprintSynthesisScene() {
                 key={s.step}
                 style={{
                   backgroundColor: COLORS.BG_ELEVATED,
-                  border: `4px solid ${COLORS.BORDER_CARD}`,
-                  borderTop: `14px solid ${s.accentColor}`,
+                  borderTop: `16px solid ${s.accentColor}`,
                   borderRadius: '36px',
                   padding: '40px 36px',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '20px',
+                  gap: '30px',
                   boxShadow: '0 20px 50px rgba(0, 0, 0, 0.08)',
                   transform: `translateY(${interpolate(pop, [0, 1], [40, 0])}px)`,
                   opacity: pop,
@@ -180,23 +170,19 @@ export default function Block29_MasterBlueprintSynthesisScene() {
                 {/* Sleeve Header */}
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 900, color: s.accentColor, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                    <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: s.accentColor, textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                       {s.step}
                     </span>
-                    <h2 style={{ fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: '4px 0 0 0' }}>
+                    <h2 style={{ fontFamily: FONTS.main, fontSize: '62px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: '4px 0 0 0' }}>
                       {s.title}
                     </h2>
                   </div>
                   <div style={{ backgroundColor: '#1E1B16', padding: '12px 24px', borderRadius: '20px', textAlign: 'center' }}>
-                    <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 900, color: '#D4A84B' }}>
+                    <span style={{ fontFamily: FONTS.main, fontSize: '56px', fontWeight: 900, color: '#D4A84B' }}>
                       {s.weight}
                     </span>
                   </div>
                 </div>
-
-                <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.35 }}>
-                  {s.role}
-                </span>
 
                 {/* 3 ETF Options List */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginTop: '4px' }}>
@@ -204,28 +190,22 @@ export default function Block29_MasterBlueprintSynthesisScene() {
                     <div
                       key={opt.ticker}
                       style={{
-                        backgroundColor: COLORS.BG_BASE,
-                        border: `2px solid ${COLORS.BORDER_CARD}`,
-                        borderRadius: '20px',
                         padding: '16px 20px',
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '4px',
+                        gap: '8px',
                       }}
                     >
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+                        <span style={{ fontFamily: FONTS.main, fontSize: '64px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
                           {opt.ticker}
                         </span>
-                        <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 800, color: s.accentColor, backgroundColor: `${s.accentColor}15`, padding: '4px 12px', borderRadius: '10px' }}>
+                        <span style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 800, color: s.accentColor, backgroundColor: `${s.accentColor}15`, padding: '6px 14px', borderRadius: '12px' }}>
                           ER: {opt.fee}
                         </span>
                       </div>
-                      <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 700, color: COLORS.INK_PRIMARY }}>
+                      <span style={{ fontFamily: FONTS.main, fontSize: '42px', fontWeight: 700, color: COLORS.INK_PRIMARY }}>
                         {opt.name}
-                      </span>
-                      <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 500, color: COLORS.INK_SECONDARY }}>
-                        {opt.role}
                       </span>
                     </div>
                   ))}
@@ -233,29 +213,6 @@ export default function Block29_MasterBlueprintSynthesisScene() {
               </div>
             );
           })}
-        </div>
-
-        {/* Bottom Callout Banner */}
-        <div
-          style={{
-            marginTop: '32px',
-            width: '100%',
-            maxWidth: '3400px',
-            backgroundColor: '#1E1B16',
-            borderRadius: '24px',
-            padding: '20px 40px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '20px',
-            boxShadow: '0 16px 40px rgba(0,0,0,0.15)',
-            transform: `translateY(${interpolate(footerPop, [0, 1], [30, 0])}px)`,
-            opacity: footerPop,
-          }}
-        >
-          <CheckCircle2 size={40} color="#D4A84B" style={{ flexShrink: 0 }} />
-          <span style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 700, color: '#FCFAF6', lineHeight: 1.35 }}>
-            Screenshot & Save: 60% Core (VOO/VTI/RSP) + 20–30% Complementary (ACWX/AVDV/DFIV) + 10–20% Diversifier (SGOV/BND/GLD).
-          </span>
         </div>
       </AbsoluteFill>
     </AbsoluteFill>

@@ -225,7 +225,6 @@ const CapitalGainsSequence: React.FC = () => {
   const { fps } = useVideoConfig();
   
   const containerPop = spring({ frame: frame - 20, fps, config: SPRING_CONFIG });
-  const lockPop = spring({ frame: frame - 60, fps, config: SPRING_CONFIG });
   const winPop = spring({ frame: frame - 90, fps, config: SPRING_CONFIG });
 
   return (

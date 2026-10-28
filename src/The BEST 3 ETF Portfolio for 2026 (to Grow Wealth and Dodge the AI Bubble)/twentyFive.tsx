@@ -127,16 +127,10 @@ const Beat1_BehavioralPillars: React.FC = () => {
           transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`,
         }}
       >
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <AlertTriangle size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            THE FINICKY ASSET PARADOX
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '92px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
           Linear Compounding vs Episodic Surges
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
+        <p style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
           Stocks compound like an engine; gold behaves like episodic catastrophe insurance
         </p>
       </div>
@@ -146,49 +140,39 @@ const Beat1_BehavioralPillars: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.BORDER_CARD}`,
-            borderTop: `12px solid ${COLORS.ACCENT_DETAIL}`,
+            borderTop: `16px solid ${COLORS.ACCENT_DETAIL}`,
             borderRadius: '36px',
-            padding: '40px 36px',
+            padding: '50px 40px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '20px',
+            gap: '30px',
             boxShadow: '0 20px 50px rgba(0, 0, 0, 0.06)',
             transform: `translateY(${interpolate(col1, [0, 1], [40, 0])}px)`,
             opacity: col1,
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, backgroundColor: `${COLORS.ACCENT_DETAIL}20`, padding: '8px 20px', borderRadius: '14px' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, backgroundColor: `${COLORS.ACCENT_DETAIL}20`, padding: '12px 24px', borderRadius: '14px' }}>
               STOCKS & BONDS
             </span>
-            <TrendingUp size={40} color={COLORS.ACCENT_DETAIL} />
+            <TrendingUp size={48} color={COLORS.ACCENT_DETAIL} />
           </div>
 
           <div>
-            <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '64px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
               Linear Compounding
-            </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 700, color: COLORS.ACCENT_DETAIL, marginTop: '6px', display: 'block' }}>
-              8% – 10% Historical Annual CAGR
             </span>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {equityFeatures.map((feat, idx) => (
-              <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
-                <CheckCircle2 size={28} color={COLORS.ACCENT_DETAIL} style={{ flexShrink: 0, marginTop: '4px' }} />
-                <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 600, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
+              <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+                <CheckCircle2 size={44} color={COLORS.ACCENT_DETAIL} style={{ flexShrink: 0, marginTop: '4px' }} />
+                <span style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 600, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
                   {feat}
                 </span>
               </div>
             ))}
-          </div>
-
-          <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '20px', padding: '18px 24px', border: `2px solid ${COLORS.BORDER_CARD}`, marginTop: 'auto' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
-              Engine Role: <strong style={{ color: COLORS.ACCENT_DETAIL, fontWeight: 900 }}>Long-Term Wealth Accumulator</strong>
-            </span>
           </div>
         </div>
 
@@ -196,49 +180,39 @@ const Beat1_BehavioralPillars: React.FC = () => {
         <div
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
-            border: `3.5px solid ${COLORS.BORDER_CARD}`,
-            borderTop: `12px solid ${COLORS.ACCENT_GOLD}`,
+            borderTop: `16px solid ${COLORS.ACCENT_GOLD}`,
             borderRadius: '36px',
-            padding: '40px 36px',
+            padding: '50px 40px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '20px',
+            gap: '30px',
             boxShadow: '0 20px 50px rgba(201, 139, 16, 0.10)',
             transform: `translateY(${interpolate(col2, [0, 1], [40, 0])}px)`,
             opacity: col2,
           }}
         >
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 900, color: COLORS.ACCENT_GOLD, backgroundColor: `${COLORS.ACCENT_GOLD}20`, padding: '8px 20px', borderRadius: '14px' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.ACCENT_GOLD, backgroundColor: `${COLORS.ACCENT_GOLD}20`, padding: '12px 24px', borderRadius: '14px' }}>
               PHYSICAL GOLD (GLD)
             </span>
-            <Coins size={40} color={COLORS.ACCENT_GOLD} />
+            <Coins size={48} color={COLORS.ACCENT_GOLD} />
           </div>
 
           <div>
-            <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '64px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
               Episodic Surges
-            </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 700, color: COLORS.ACCENT_GOLD, marginTop: '6px', display: 'block' }}>
-              Parabolic Spikes + Long Doldrums
             </span>
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {goldFeatures.map((feat, idx) => (
-              <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '14px' }}>
-                <CheckCircle2 size={28} color={COLORS.ACCENT_GOLD} style={{ flexShrink: 0, marginTop: '4px' }} />
-                <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 600, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
+              <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+                <CheckCircle2 size={44} color={COLORS.ACCENT_GOLD} style={{ flexShrink: 0, marginTop: '4px' }} />
+                <span style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 600, color: COLORS.INK_PRIMARY, lineHeight: 1.35 }}>
                   {feat}
                 </span>
               </div>
             ))}
-          </div>
-
-          <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '20px', padding: '18px 24px', border: `2px solid ${COLORS.BORDER_CARD}`, marginTop: 'auto' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 800, color: COLORS.INK_PRIMARY }}>
-              Engine Role: <strong style={{ color: COLORS.ACCENT_GOLD, fontWeight: 900 }}>Monetary Crisis Insurance</strong>
-            </span>
           </div>
         </div>
       </div>
@@ -289,16 +263,10 @@ const Beat2_ZeroCorrelationDashboard: React.FC = () => {
           transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`,
         }}
       >
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <ShieldCheck size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            THE CORE PURPOSE OF SLEEVE 3
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '92px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
           Zero Correlation to Equities
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
+        <p style={{ fontFamily: FONTS.main, fontSize: '50px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: 0 }}>
           Holding assets that move independently to protect the total portfolio
         </p>
       </div>
@@ -309,8 +277,7 @@ const Beat2_ZeroCorrelationDashboard: React.FC = () => {
           style={{
             backgroundColor: COLORS.BG_ELEVATED,
             borderRadius: '32px',
-            border: `3.5px solid ${COLORS.ACCENT_GOLD}`,
-            padding: '32px 44px',
+            padding: '48px 60px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -323,34 +290,31 @@ const Beat2_ZeroCorrelationDashboard: React.FC = () => {
             <div
               style={{
                 backgroundColor: `${COLORS.ACCENT_GOLD}20`,
-                width: '88px',
-                height: '88px',
+                width: '100px',
+                height: '100px',
                 borderRadius: '24px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
             >
-              <Activity size={52} color={COLORS.ACCENT_GOLD} />
+              <Activity size={60} color={COLORS.ACCENT_GOLD} />
             </div>
             <div>
-              <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 800, color: COLORS.ACCENT_GOLD, textTransform: 'uppercase' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '48px', fontWeight: 800, color: COLORS.ACCENT_GOLD, textTransform: 'uppercase' }}>
                 Stock Market Correlation
               </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '100px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.95, display: 'block', margin: '4px 0' }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '160px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 0.95, display: 'block', margin: '4px 0' }}>
                 0.00
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Behaves completely independent of corporate stocks and interest rate cycles
               </span>
             </div>
           </div>
 
           <div style={{ backgroundColor: '#1E1B16', padding: '24px 36px', borderRadius: '24px', textAlign: 'center' }}>
-            <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 900, color: '#D4A84B', textTransform: 'uppercase', display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '34px', fontWeight: 900, color: '#D4A84B', textTransform: 'uppercase', display: 'block' }}>
               ASYMMETRIC POWER
             </span>
-            <span style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 800, color: '#FCFAF6', marginTop: '6px', display: 'block' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '46px', fontWeight: 800, color: '#FCFAF6', marginTop: '6px', display: 'block' }}>
               Protects when equities plunge
             </span>
           </div>
@@ -366,26 +330,22 @@ const Beat2_ZeroCorrelationDashboard: React.FC = () => {
                 style={{
                   backgroundColor: COLORS.BG_ELEVATED,
                   borderRadius: '26px',
-                  border: `2.5px solid ${COLORS.BORDER_CARD}`,
-                  padding: '28px 24px',
+                  padding: '40px 32px',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '12px',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  textAlign: 'center',
                   boxShadow: '0 10px 24px rgba(0, 0, 0, 0.04)',
                   opacity: pop,
                   transform: `translateY(${interpolate(pop, [0, 1], [30, 0])}px)`,
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  <div style={{ backgroundColor: `${COLORS.ACCENT_GOLD}20`, width: '48px', height: '48px', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <CheckCircle2 size={28} color={COLORS.ACCENT_GOLD} />
-                  </div>
-                  <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
-                    {n.title}
-                  </span>
+                <div style={{ backgroundColor: `${COLORS.ACCENT_GOLD}20`, width: '64px', height: '64px', borderRadius: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px' }}>
+                  <CheckCircle2 size={40} color={COLORS.ACCENT_GOLD} />
                 </div>
-                <span style={{ fontFamily: FONTS.main, fontSize: '28px', fontWeight: 600, color: COLORS.INK_SECONDARY, lineHeight: 1.35 }}>
-                  {n.desc}
+                <span style={{ fontFamily: FONTS.main, fontSize: '44px', fontWeight: 900, color: COLORS.INK_PRIMARY }}>
+                  {n.title}
                 </span>
               </div>
             );

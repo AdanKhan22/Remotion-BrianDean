@@ -15,9 +15,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
   interpolate,
-  interpolateColors,
-  Audio,
-  staticFile
+  interpolateColors
 } from 'remotion';
 import {
   RefreshCcw,

@@ -26,10 +26,9 @@ import {
   Timer,
   BarChart,
   TrendingUp,
-  Flame,
   Target,
-  Landmark,
   ArrowDownCircle,
+  Flame,
   Wallet
 } from 'lucide-react';
 
@@ -334,5 +333,3 @@ export default function IntroContextScene() {
     </AbsoluteFill>
   );
 }
-
-export default IntroContextScene;

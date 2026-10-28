@@ -6,7 +6,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
   interpolate,
-  Easing,
 } from 'remotion';
 import { Banknote, XOctagon } from 'lucide-react';
 

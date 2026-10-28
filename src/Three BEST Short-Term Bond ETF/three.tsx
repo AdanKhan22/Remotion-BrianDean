@@ -18,9 +18,7 @@ import {
   ShieldCheck,
   Landmark,
   Calculator,
-  Clock,
   AlertCircle,
-  TrendingDown,
   Percent
 } from 'lucide-react';
 

@@ -135,7 +135,7 @@ const DisclaimerRow: React.FC<{
       }}
     >
       <div style={{ backgroundColor: iconBg, padding: '32px', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexShrink: 0 }}>
-        {React.cloneElement(icon as React.ReactElement, { color: isHero ? COLORS.BG_BASE : COLORS.INK_PRIMARY, size: 80, strokeWidth: 2 })}
+        {React.cloneElement(icon as React.ReactElement<any>, { color: isHero ? COLORS.BG_BASE : COLORS.INK_PRIMARY, size: 80, strokeWidth: 2 })}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
         <span style={{ fontFamily: FONTS.main, fontSize: '72px', fontWeight: 800, color: titleColor, lineHeight: 1.1, letterSpacing: '-0.01em' }}>

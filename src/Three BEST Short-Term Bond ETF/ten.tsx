@@ -29,7 +29,6 @@ import {
   Sequence,
   spring,
   useCurrentFrame,
-  useVideoConfig,
   interpolate,
 } from 'remotion';
 import {

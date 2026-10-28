@@ -93,119 +93,79 @@ const Beat1_BNDOverview: React.FC = () => {
 
   return (
     <LeftZone>
-      {/* Top Video Stage Indicator (Brian Comment 37) */}
-      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '24px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', alignSelf: 'flex-start' }}>
-        <ShieldCheck size={36} color="#D4A84B" />
-        <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-          SLEEVE 3 · DIVERSIFIER OPTION 2 · BND
-        </span>
-      </div>
-
-      {/* Website Mockup Browser Window */}
+      {/* Clean, Bold Content Area */}
       <div
         style={{
           width: '100%',
           backgroundColor: COLORS.BG_ELEVATED,
-          border: `3.5px solid ${COLORS.BORDER_CARD}`,
-          borderRadius: '36px',
+          border: `4px solid ${COLORS.BORDER_CARD}`,
+          borderRadius: '40px',
           boxShadow: '0 24px 60px rgba(0, 0, 0, 0.10)',
-          overflow: 'hidden',
+          padding: '52px 56px',
           display: 'flex',
           flexDirection: 'column',
+          gap: '40px',
           transform: `scale(${interpolate(cardPop, [0, 1], [0.96, 1])}) translateY(${interpolate(cardPop, [0, 1], [40, 0])}px)`,
           opacity: cardPop,
         }}
       >
-        {/* Browser Top Navigation Bar */}
-        <div style={{ height: '76px', backgroundColor: '#EBE5D8', borderBottom: `2px solid ${COLORS.BORDER_CARD}`, display: 'flex', alignItems: 'center', padding: '0 32px', gap: '24px' }}>
-          <div style={{ display: 'flex', gap: '12px' }}>
-            <div style={{ width: '18px', height: '18px', borderRadius: '50%', backgroundColor: '#E06C54' }} />
-            <div style={{ width: '18px', height: '18px', borderRadius: '50%', backgroundColor: '#ECC94B' }} />
-            <div style={{ width: '18px', height: '18px', borderRadius: '50%', backgroundColor: '#48BB78' }} />
+        {/* Header Block */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div>
+            <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.04em', lineHeight: 1.05 }}>
+              Total Bond Market ETF
+            </h1>
+            <p style={{ fontFamily: FONTS.main, fontSize: '54px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '14px 0 0 0' }}>
+              Broad investment-grade US bond market exposure
+            </p>
           </div>
-          <div style={{ flex: 1, height: '46px', backgroundColor: '#FCFAF6', borderRadius: '12px', display: 'flex', alignItems: 'center', padding: '0 20px', gap: '12px', border: `1.5px solid ${COLORS.BORDER_CARD}` }}>
-            <Globe size={22} color={COLORS.INK_TERTIARY} />
-            <span style={{ fontFamily: FONTS.main, fontSize: '22px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-              https://advisors.vanguard.com/investments/products/bnd/vanguard-total-bond-market-etf
+
+          <div style={{ backgroundColor: '#1E1B16', padding: '24px 36px', borderRadius: '28px', textAlign: 'center' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase', display: 'block' }}>
+              PORTFOLIO SLOT
+            </span>
+            <span style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: '#FCFAF6', lineHeight: 1.0 }}>
+              10–20%
             </span>
           </div>
-          <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 900, color: COLORS.ACCENT_RED, letterSpacing: '0.04em' }}>
-            Vanguard®
-          </span>
         </div>
 
-        {/* Website Content Area */}
-        <div style={{ padding: '44px 48px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-            <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '12px', backgroundColor: `${COLORS.ACCENT_RED}18`, padding: '6px 20px', borderRadius: '14px', marginBottom: '12px' }}>
-                <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 900, color: COLORS.ACCENT_RED }}>
-                  NASDAQ: BND
-                </span>
-              </div>
-              <h1 style={{ fontFamily: FONTS.main, fontSize: '76px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em' }}>
-                Vanguard Total Bond Market ETF
-              </h1>
-              <p style={{ fontFamily: FONTS.main, fontSize: '36px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '10px 0 0 0' }}>
-                Broad investment-grade US bond market exposure covering government, agency & corporate debt
-              </p>
-            </div>
-            <div style={{ backgroundColor: '#1E1B16', padding: '18px 28px', borderRadius: '24px', textAlign: 'center' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '22px', fontWeight: 800, color: '#D4A84B', textTransform: 'uppercase', display: 'block' }}>
-                SLOT ALLOCATION
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '52px', fontWeight: 900, color: '#FCFAF6' }}>
-                10-20%
-              </span>
-            </div>
-          </div>
-
-          {/* 3 Metric Cards */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', transform: `translateY(${interpolate(metricsPop, [0, 1], [30, 0])}px)`, opacity: metricsPop }}>
-            <div style={{ backgroundColor: COLORS.BG_BASE, border: `2.5px solid ${COLORS.BORDER_CARD}`, borderRadius: '24px', padding: '30px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
-                Expense Ratio
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '78px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0 }}>
-                0.03%
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Same rock-bottom fee tier as VOO
-              </span>
-            </div>
-
-            <div style={{ backgroundColor: COLORS.BG_BASE, border: `2.5px solid ${COLORS.BORDER_CARD}`, borderRadius: '24px', padding: '30px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
-                Number of Bonds
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '78px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.0 }}>
-                11,000+
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Massive fixed-income diversification
-              </span>
-            </div>
-
-            <div style={{ backgroundColor: COLORS.BG_BASE, border: `2.5px solid ${COLORS.BORDER_CARD}`, borderRadius: '24px', padding: '30px 24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '24px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
-                Average Duration
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '78px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, lineHeight: 1.0 }}>
-                6.5 Yrs
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '26px', fontWeight: 600, color: COLORS.INK_SECONDARY }}>
-                Intermediate duration with ~4.3% yield
-              </span>
-            </div>
-          </div>
-
-          {/* Bottom Takeaway */}
-          <div style={{ backgroundColor: '#1E1B16', borderRadius: '20px', padding: '22px 32px', display: 'flex', alignItems: 'center', gap: '16px' }}>
-            <CheckCircle2 size={32} color="#D4A84B" />
-            <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 700, color: '#FCFAF6' }}>
-              Institutional Fortress: High liquidity, near-zero credit default risk, and automated income distribution.
+        {/* 3 Massive Metric Cards */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '28px', transform: `translateY(${interpolate(metricsPop, [0, 1], [30, 0])}px)`, opacity: metricsPop }}>
+          <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '28px', padding: '40px 30px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+              EXPENSE RATIO
+            </span>
+            <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_HERO, lineHeight: 1.0 }}>
+              0.03%
             </span>
           </div>
+
+          <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '28px', padding: '40px 30px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+              NUMBER OF BONDS
+            </span>
+            <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.INK_PRIMARY, lineHeight: 1.0 }}>
+              11,000+
+            </span>
+          </div>
+
+          <div style={{ backgroundColor: COLORS.BG_BASE, borderRadius: '28px', padding: '40px 30px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <span style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 800, color: COLORS.INK_TERTIARY, textTransform: 'uppercase' }}>
+              AVERAGE DURATION
+            </span>
+            <span style={{ fontFamily: FONTS.main, fontSize: '120px', fontWeight: 900, color: COLORS.ACCENT_DETAIL, lineHeight: 1.0 }}>
+              6.5 Yrs
+            </span>
+          </div>
+        </div>
+
+        {/* Bottom Takeaway */}
+        <div style={{ backgroundColor: '#1E1B16', borderRadius: '24px', padding: '26px 36px', display: 'flex', alignItems: 'center', gap: '20px' }}>
+          <CheckCircle2 size={40} color="#D4A84B" style={{ flexShrink: 0 }} />
+          <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 800, color: '#FCFAF6' }}>
+            High liquidity, near-zero credit default risk, and automated monthly income.
+          </span>
         </div>
       </div>
     </LeftZone>
@@ -230,18 +190,9 @@ const Beat2_IssuerTypeBreakdown: React.FC = () => {
   return (
     <LeftZone>
       <div style={{ transform: `translateY(${interpolate(headerPop, [0, 1], [30, 0])}px)`, opacity: headerPop, textAlign: 'left', marginBottom: '40px' }}>
-        <div style={{ display: 'inline-flex', alignItems: 'center', gap: '16px', backgroundColor: '#1E1B16', padding: '12px 32px', borderRadius: '40px', marginBottom: '18px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)' }}>
-          <Landmark size={36} color="#D4A84B" />
-          <span style={{ fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900, color: '#FCFAF6', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            VANGUARD BND · WEIGHTED EXPOSURES BY ISSUER
-          </span>
-        </div>
-        <h1 style={{ fontFamily: FONTS.main, fontSize: '92px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
+        <h1 style={{ fontFamily: FONTS.main, fontSize: '110px', fontWeight: 900, color: COLORS.INK_PRIMARY, margin: 0, letterSpacing: '-0.03em', lineHeight: 1.1 }}>
           Who Backs the 11,000 Bonds?
         </h1>
-        <p style={{ fontFamily: FONTS.main, fontSize: '40px', fontWeight: 600, color: COLORS.INK_SECONDARY, margin: '12px 0 0 0' }}>
-          Data source: Vanguard Institutional Product Portfolio Exposures
-        </p>
       </div>
 
       <div
@@ -259,14 +210,13 @@ const Beat2_IssuerTypeBreakdown: React.FC = () => {
             key={item.type}
             style={{
               backgroundColor: COLORS.BG_ELEVATED,
-              border: item.isHighlight ? `4px solid ${COLORS.ACCENT_HERO}` : `3px solid ${COLORS.BORDER_CARD}`,
-              borderRadius: '28px',
-              padding: '28px 40px',
-              display: 'grid',
-              gridTemplateColumns: '70px 1.5fr 150px 160px',
+              border: 'none',
+              borderRadius: '32px',
+              padding: '40px 44px',
+              display: 'flex',
+              justifyContent: 'space-between',
               alignItems: 'center',
-              gap: '24px',
-              boxShadow: item.isHighlight ? `0 16px 48px rgba(184, 134, 46, ${0.2 * highlightProgress})` : '0 12px 32px rgba(0, 0, 0, 0.04)',
+              boxShadow: item.isHighlight ? `0 20px 50px rgba(184, 134, 46, ${0.25 * highlightProgress})` : '0 12px 32px rgba(0, 0, 0, 0.04)',
               position: 'relative',
               overflow: 'hidden',
             }}
@@ -276,32 +226,30 @@ const Beat2_IssuerTypeBreakdown: React.FC = () => {
                 style={{
                   position: 'absolute',
                   inset: 0,
-                  backgroundColor: `${COLORS.ACCENT_HERO}12`,
+                  backgroundColor: `${COLORS.ACCENT_HERO}15`,
                   opacity: highlightProgress,
                   pointerEvents: 'none',
                 }}
               />
             )}
-            <div style={{ width: '68px', height: '68px', borderRadius: '18px', backgroundColor: COLORS.BG_BASE, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              {item.icon}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '28px' }}>
+              <div style={{ width: '80px', height: '80px', borderRadius: '22px', backgroundColor: COLORS.BG_BASE, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                {item.icon}
+              </div>
+              <div>
+                <span style={{ fontFamily: FONTS.main, fontSize: '64px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
+                  {item.type}
+                </span>
+              </div>
             </div>
-            <div>
-              <span style={{ fontFamily: FONTS.main, fontSize: '38px', fontWeight: 900, color: COLORS.INK_PRIMARY, display: 'block' }}>
-                {item.type}
-              </span>
-              <span style={{ fontFamily: FONTS.main, fontSize: '30px', fontWeight: 600, color: COLORS.INK_SECONDARY, marginTop: '4px', display: 'block' }}>
-                {item.desc}
-              </span>
-            </div>
-            <div style={{ textAlign: 'right' }}>
+
+            <div style={{ textAlign: 'right', display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: '6px' }}>
               {item.isHighlight && (
-                <span style={{ display: 'inline-block', backgroundColor: '#1E1B16', color: '#D4A84B', padding: '6px 16px', borderRadius: '14px', fontFamily: FONTS.main, fontSize: '22px', fontWeight: 900 }}>
+                <span style={{ display: 'inline-block', backgroundColor: '#1E1B16', color: '#D4A84B', padding: '8px 20px', borderRadius: '16px', fontFamily: FONTS.main, fontSize: '32px', fontWeight: 900 }}>
                   SOVEREIGN BACKED
                 </span>
               )}
-            </div>
-            <div style={{ textAlign: 'right' }}>
-              <span style={{ fontFamily: FONTS.main, fontSize: '68px', fontWeight: 900, color: item.isHighlight ? COLORS.ACCENT_HERO : COLORS.INK_PRIMARY }}>
+              <span style={{ fontFamily: FONTS.main, fontSize: '84px', fontWeight: 900, color: item.isHighlight ? COLORS.ACCENT_HERO : COLORS.INK_PRIMARY, lineHeight: 1.0 }}>
                 {item.weight}
               </span>
             </div>

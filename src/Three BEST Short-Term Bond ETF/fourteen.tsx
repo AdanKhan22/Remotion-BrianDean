@@ -30,9 +30,7 @@ import {
   Award,
   RefreshCcw,
   Package,
-  Layers,
-  Landmark,
-  Percent
+  Landmark
 } from 'lucide-react';
 
 // --- STRICT V3 COLOR SYSTEM ---
@@ -380,5 +378,3 @@ export default function FinalSummaryScene() {
     </AbsoluteFill>
   );
 }
-
-export default FinalSummaryScene;
